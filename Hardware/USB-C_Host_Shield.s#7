@@ -363,7 +363,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="165.608" y="11.43" size="2.54" layer="94">M. Chodikov</text>
-<text x="239.268" y="6.35" size="2.54" layer="94">v01</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
