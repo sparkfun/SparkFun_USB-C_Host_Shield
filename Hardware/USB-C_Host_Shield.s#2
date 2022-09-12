@@ -2697,6 +2697,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 <text x="0" y="-0.254" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
 </symbol>
+<symbol name="5V">
+<description>&lt;h3&gt;5V Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="3.3V" prefix="SUPPLY">
@@ -2718,6 +2725,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
 <gates>
 <gate name="1" symbol="DGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5V" prefix="SUPPLY">
+<description>&lt;h3&gt;5V Supply Symbol&lt;/h3&gt;
+&lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -3506,6 +3527,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U5" library="SparkFun-IC-Microcontroller" deviceset="MAX3421" device=""/>
 <part name="R2" library="SparkFun-Resistors" deviceset="33OHM" device="-0603-1/10W-1%" value="33"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="33OHM" device="-0603-1/10W-1%" value="33"/>
+<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3627,6 +3651,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R3" gate="G$1" x="40.64" y="71.12" smashed="yes">
 <attribute name="NAME" x="40.64" y="72.644" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="40.64" y="69.596" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="SUPPLY3" gate="G$1" x="35.56" y="76.2" smashed="yes">
+<attribute name="VALUE" x="35.56" y="78.994" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="GND8" gate="1" x="35.56" y="53.34" smashed="yes">
+<attribute name="VALUE" x="35.56" y="53.086" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="GND9" gate="1" x="63.5" y="27.94" smashed="yes">
+<attribute name="VALUE" x="63.5" y="27.686" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -3755,6 +3788,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="149.86" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J1" gate="J1" pin="GND"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="33.02" y1="58.42" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="58.42" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="63.5" y1="30.48" x2="63.5" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="GND"/>
+<wire x1="63.5" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -3825,14 +3870,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="208.28" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MOSI" class="0">
+<net name="PICO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="*D11"/>
 <wire x1="203.2" y1="66.04" x2="218.44" y2="66.04" width="0.1524" layer="91"/>
 <label x="208.28" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MISO" class="0">
+<net name="POCI" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="D12"/>
 <wire x1="203.2" y1="63.5" x2="218.44" y2="63.5" width="0.1524" layer="91"/>
@@ -3884,6 +3929,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="D+"/>
 <wire x1="45.72" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="J1" gate="J1" pin="VBUS"/>
+<pinref part="SUPPLY3" gate="G$1" pin="5V"/>
+<wire x1="33.02" y1="73.66" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="73.66" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

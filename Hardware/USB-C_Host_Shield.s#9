@@ -3409,8 +3409,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND4" gate="1" x="93.98" y="134.62" smashed="yes">
 <attribute name="VALUE" x="93.98" y="134.366" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="162.56" y="165.1" smashed="yes">
-<attribute name="VALUE" x="162.56" y="167.894" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY2" gate="G$1" x="162.56" y="162.56" smashed="yes">
+<attribute name="VALUE" x="162.56" y="165.354" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -3492,7 +3492,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="147.32" y="160.02"/>
 <wire x1="162.56" y1="160.02" x2="162.56" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="160.02" x2="162.56" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="160.02" x2="162.56" y2="162.56" width="0.1524" layer="91"/>
 <junction x="162.56" y="160.02"/>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
 </segment>

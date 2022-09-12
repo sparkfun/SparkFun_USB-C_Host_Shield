@@ -3264,6 +3264,160 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-IC-Microcontroller">
+<description>&lt;h3&gt;SparkFun Microcontrollers&lt;/h3&gt;
+This library contains microcontrollers.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="TQFP32">
+<circle x="-4.94" y="1.75" radius="0.1" width="0.2" layer="21"/>
+<circle x="-4.94" y="1.75" radius="0.1" width="0.2" layer="51"/>
+<wire x1="2.6" y1="-2.6" x2="-2.6" y2="-2.6" width="0.127" layer="51"/>
+<wire x1="2.6" y1="2.6" x2="-2.6" y2="2.6" width="0.127" layer="51"/>
+<wire x1="2.6" y1="-2.6" x2="2.6" y2="2.6" width="0.127" layer="51"/>
+<wire x1="-2.6" y1="-2.6" x2="-2.6" y2="2.6" width="0.127" layer="51"/>
+<wire x1="2.6" y1="-2.6" x2="2.21" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="2.6" y1="2.6" x2="2.21" y2="2.6" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-2.6" x2="-2.21" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="2.6" x2="-2.21" y2="2.6" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-2.6" x2="2.6" y2="-2.21" width="0.127" layer="21"/>
+<wire x1="2.6" y1="2.6" x2="2.6" y2="2.21" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-2.6" x2="-2.6" y2="-2.21" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="2.6" x2="-2.6" y2="2.21" width="0.127" layer="21"/>
+<smd name="9" x="-1.75" y="-3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="10" x="-1.25" y="-3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="11" x="-0.75" y="-3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="12" x="-0.25" y="-3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="13" x="0.25" y="-3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="14" x="0.75" y="-3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="15" x="1.25" y="-3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="16" x="1.75" y="-3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="25" x="1.75" y="3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="26" x="1.25" y="3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="27" x="0.75" y="3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="28" x="0.25" y="3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="29" x="-0.25" y="3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="30" x="-0.75" y="3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="31" x="-1.25" y="3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="32" x="-1.75" y="3.18" dx="1.56" dy="0.28" layer="1" roundness="25" rot="R90"/>
+<smd name="1" x="-3.18" y="1.75" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="2" x="-3.18" y="1.25" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="3" x="-3.18" y="0.75" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="4" x="-3.18" y="0.25" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="5" x="-3.18" y="-0.25" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="6" x="-3.18" y="-0.75" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="7" x="-3.18" y="-1.25" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="8" x="-3.18" y="-1.75" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="17" x="3.18" y="-1.75" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="18" x="3.18" y="-1.25" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="19" x="3.18" y="-0.75" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="20" x="3.18" y="-0.25" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="21" x="3.18" y="0.25" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="22" x="3.18" y="0.75" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="23" x="3.18" y="1.25" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+<smd name="24" x="3.18" y="1.75" dx="1.56" dy="0.28" layer="1" roundness="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX3421">
+<wire x1="-12.7" y1="-30.48" x2="-12.7" y2="27.94" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="27.94" x2="12.7" y2="27.94" width="0.254" layer="94"/>
+<wire x1="12.7" y1="27.94" x2="12.7" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-30.48" x2="-12.7" y2="-30.48" width="0.254" layer="94"/>
+<pin name="GPIN7" x="15.24" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="VL" x="-15.24" y="25.4" length="short" direction="in"/>
+<pin name="GND" x="-15.24" y="-27.94" length="short" direction="in"/>
+<pin name="GPOUT0" x="15.24" y="-10.16" length="short" direction="out" rot="R180"/>
+<pin name="GPOUT1" x="15.24" y="-12.7" length="short" direction="out" rot="R180"/>
+<pin name="GPOUT2" x="15.24" y="-15.24" length="short" direction="out" rot="R180"/>
+<pin name="GPOUT3" x="15.24" y="-17.78" length="short" direction="out" rot="R180"/>
+<pin name="GPOUT4" x="15.24" y="-20.32" length="short" direction="out" rot="R180"/>
+<pin name="GPOUT5" x="15.24" y="-22.86" length="short" direction="out" rot="R180"/>
+<pin name="GPOUT6" x="15.24" y="-25.4" length="short" direction="out" rot="R180"/>
+<pin name="GPOUT7" x="15.24" y="-27.94" length="short" direction="out" rot="R180"/>
+<pin name="!RES" x="-15.24" y="-10.16" length="short" direction="in"/>
+<pin name="SCLK" x="15.24" y="25.4" length="short" direction="in" rot="R180"/>
+<pin name="!CS" x="15.24" y="22.86" length="short" direction="in" rot="R180"/>
+<pin name="POCI" x="15.24" y="17.78" length="short" direction="out" rot="R180"/>
+<pin name="PICO" x="15.24" y="20.32" length="short" rot="R180"/>
+<pin name="GPX" x="-15.24" y="-20.32" length="short" direction="out"/>
+<pin name="INT" x="-15.24" y="-12.7" length="short" direction="out"/>
+<pin name="D-" x="-15.24" y="7.62" length="short"/>
+<pin name="D+" x="-15.24" y="10.16" length="short"/>
+<pin name="VBCOMP" x="-15.24" y="17.78" length="short" direction="in"/>
+<pin name="VCC" x="-15.24" y="22.86" length="short" direction="in"/>
+<pin name="XI" x="-15.24" y="-2.54" length="short" direction="in"/>
+<pin name="XO" x="-15.24" y="0" length="short" direction="out"/>
+<pin name="GPIN0" x="15.24" y="12.7" length="short" direction="in" rot="R180"/>
+<pin name="GPIN1" x="15.24" y="10.16" length="short" direction="in" rot="R180"/>
+<pin name="GPIN2" x="15.24" y="7.62" length="short" direction="in" rot="R180"/>
+<pin name="GPIN3" x="15.24" y="5.08" length="short" direction="in" rot="R180"/>
+<pin name="GPIN4" x="15.24" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="GPIN5" x="15.24" y="0" length="short" direction="in" rot="R180"/>
+<pin name="GPIN6" x="15.24" y="-2.54" length="short" direction="in" rot="R180"/>
+<text x="-12.7" y="27.94" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-12.7" y="-33.02" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX3421">
+<description>USB Peripheral/Host Controller with SPI Interface</description>
+<gates>
+<gate name="G$1" symbol="MAX3421" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TQFP32">
+<connects>
+<connect gate="G$1" pin="!CS" pad="14"/>
+<connect gate="G$1" pin="!RES" pad="12"/>
+<connect gate="G$1" pin="D+" pad="21"/>
+<connect gate="G$1" pin="D-" pad="20"/>
+<connect gate="G$1" pin="GND" pad="3 19"/>
+<connect gate="G$1" pin="GPIN0" pad="26"/>
+<connect gate="G$1" pin="GPIN1" pad="27"/>
+<connect gate="G$1" pin="GPIN2" pad="28"/>
+<connect gate="G$1" pin="GPIN3" pad="29"/>
+<connect gate="G$1" pin="GPIN4" pad="30"/>
+<connect gate="G$1" pin="GPIN5" pad="31"/>
+<connect gate="G$1" pin="GPIN6" pad="32"/>
+<connect gate="G$1" pin="GPIN7" pad="1"/>
+<connect gate="G$1" pin="GPOUT0" pad="4"/>
+<connect gate="G$1" pin="GPOUT1" pad="5"/>
+<connect gate="G$1" pin="GPOUT2" pad="6"/>
+<connect gate="G$1" pin="GPOUT3" pad="7"/>
+<connect gate="G$1" pin="GPOUT4" pad="8"/>
+<connect gate="G$1" pin="GPOUT5" pad="9"/>
+<connect gate="G$1" pin="GPOUT6" pad="10"/>
+<connect gate="G$1" pin="GPOUT7" pad="11"/>
+<connect gate="G$1" pin="GPX" pad="17"/>
+<connect gate="G$1" pin="INT" pad="18"/>
+<connect gate="G$1" pin="PICO" pad="16"/>
+<connect gate="G$1" pin="POCI" pad="15"/>
+<connect gate="G$1" pin="SCLK" pad="13"/>
+<connect gate="G$1" pin="VBCOMP" pad="22"/>
+<connect gate="G$1" pin="VCC" pad="23"/>
+<connect gate="G$1" pin="VL" pad="2"/>
+<connect gate="G$1" pin="XI" pad="24"/>
+<connect gate="G$1" pin="XO" pad="25"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3305,6 +3459,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R1" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="U$1" library="SparkFun-IC-Microcontroller" deviceset="MAX3421" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3414,6 +3569,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="152.4" y="165.1" smashed="yes">
 <attribute name="VALUE" x="152.4" y="167.894" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="U$1" gate="G$1" x="81.28" y="60.96" smashed="yes">
+<attribute name="NAME" x="68.58" y="88.9" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="68.58" y="27.94" size="1.778" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
