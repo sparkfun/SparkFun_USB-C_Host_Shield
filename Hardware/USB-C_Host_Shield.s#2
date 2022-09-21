@@ -4436,6 +4436,63 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 </device>
 </devices>
 </deviceset>
+<deviceset name="2.2UF" prefix="C">
+<description>&lt;h3&gt;2.2µF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-10V-20%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-07888" constant="no"/>
+<attribute name="VALUE" value="2.2uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805-25V-(+80/-20%)" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-11624"/>
+<attribute name="VALUE" value="2.2uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-1206-50V-10%" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-10009"/>
+<attribute name="VALUE" value="2.2uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402_TIGHT-10V-10%-X5R" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-14232"/>
+<attribute name="VALUE" value="2.2uF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun-PowerSymbols">
@@ -5931,21 +5988,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="10UF" device="-0603-6.3V-20%" value="10uF"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="240OHM" device="-0603-1/10W-1%" value="240"/>
+<part name="C11" library="SparkFun-Capacitors" deviceset="2.2UF" device="-0603-10V-20%" value="2.2uF"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="165.608" y="11.43" size="2.54" layer="94">M. Chodikov</text>
 <text x="239.268" y="6.35" size="2.54" layer="94">v01</text>
-<text x="60.96" y="172.72" size="2.54" layer="94">Power Regulator</text>
+<text x="66.04" y="177.8" size="2.54" layer="94">Power Regulator</text>
 <text x="187.96" y="114.3" size="2.54" layer="94">Arduino Shield</text>
-<text x="76.2" y="106.68" size="2.54" layer="94">USB Peripheral</text>
+<text x="63.5" y="111.76" size="2.54" layer="94">USB Peripheral</text>
 <wire x1="0" y1="121.92" x2="147.32" y2="121.92" width="0.2032" layer="94" style="shortdash"/>
 <wire x1="147.32" y1="121.92" x2="165.1" y2="121.92" width="0.2032" layer="94" style="shortdash"/>
 <wire x1="165.1" y1="121.92" x2="165.1" y2="185.42" width="0.2032" layer="94" style="shortdash"/>
 <wire x1="147.32" y1="35.56" x2="147.32" y2="121.92" width="0.2032" layer="94" style="shortdash"/>
 <wire x1="165.1" y1="121.92" x2="248.92" y2="121.92" width="0.2032" layer="94" style="shortdash"/>
 <text x="198.12" y="177.8" size="2.54" layer="94">Hex Inverter</text>
+<text x="187.96" y="175.26" size="1.27" layer="97">Translate 5V Arduino signals to 3.3V for the MAX3421</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -6033,8 +6092,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="143.256" y="157.48" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="146.304" y="157.48" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="GND4" gate="1" x="76.2" y="132.08" smashed="yes">
-<attribute name="VALUE" x="76.2" y="131.826" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND4" gate="1" x="76.2" y="129.54" smashed="yes">
+<attribute name="VALUE" x="76.2" y="129.286" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="144.78" y="167.64" smashed="yes">
 <attribute name="VALUE" x="144.78" y="170.434" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -6142,6 +6201,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R8" gate="G$1" x="76.2" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="74.676" y="157.48" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="77.724" y="157.48" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="C11" gate="G$1" x="66.04" y="142.24" smashed="yes">
+<attribute name="NAME" x="65.659" y="138.684" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="68.199" y="136.144" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -6387,6 +6450,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="149.86" x2="76.2" y2="152.4" width="0.1524" layer="91"/>
 <junction x="76.2" y="149.86"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="149.86" x2="66.04" y2="147.32" width="0.1524" layer="91"/>
+<junction x="66.04" y="149.86"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -6394,6 +6460,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="137.16" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="134.62" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="139.7" x2="66.04" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="134.62" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
+<junction x="76.2" y="134.62"/>
 </segment>
 </net>
 <net name="RESET" class="0">
