@@ -6718,12 +6718,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="76.2" y1="43.18" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <label x="66.04" y="43.18" size="1.27" layer="95"/>
 </segment>
-<segment>
-<pinref part="S2" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="RES"/>
-<wire x1="175.26" y1="73.66" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
-<label x="177.8" y="73.66" size="1.27" layer="95"/>
-</segment>
 </net>
 <net name="XO" class="0">
 <segment>
@@ -6848,6 +6842,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U3" gate="G$1" pin="4Y"/>
 <wire x1="233.68" y1="149.86" x2="218.44" y2="149.86" width="0.1524" layer="91"/>
 <label x="223.52" y="149.86" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="S2" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="RES"/>
+<wire x1="175.26" y1="73.66" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

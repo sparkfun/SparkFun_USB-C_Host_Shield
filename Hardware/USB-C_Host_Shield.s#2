@@ -5930,6 +5930,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 <class number="1" name="VIN" width="0" drill="0">
 </class>
+<class number="2" name="diff pairs" width="0.0889" drill="0">
+</class>
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
@@ -6533,32 +6535,36 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="187.96" y="157.48" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="D+" class="0">
+<net name="D_P" class="2">
 <segment>
 <pinref part="J1" gate="J1" pin="D+"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="63.5" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
+<label x="25.4" y="63.5" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="D-" class="0">
+<net name="D_N" class="2">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="J1" gate="J1" pin="D-"/>
 <wire x1="50.8" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
+<label x="25.4" y="60.96" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="MAX_D-" class="0">
+<net name="MAX_D_N" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="D-"/>
 <wire x1="60.96" y1="60.96" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
+<label x="66.04" y="60.96" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="MAX_D+" class="0">
+<net name="MAX_D_P" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="D+"/>
 <wire x1="50.8" y1="63.5" x2="76.2" y2="63.5" width="0.1524" layer="91"/>
+<label x="66.04" y="63.5" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="GPOUT0" class="0">

@@ -6711,13 +6711,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="111.76" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SCK_IN" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="SCLK"/>
-<wire x1="106.68" y1="78.74" x2="116.84" y2="78.74" width="0.1524" layer="91"/>
-<label x="109.22" y="78.74" size="1.27" layer="95"/>
-</segment>
-</net>
 <net name="RESET_IN" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="!RES"/>
@@ -6817,6 +6810,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U3" gate="G$1" pin="1Y"/>
 <wire x1="218.44" y1="157.48" x2="233.68" y2="157.48" width="0.1524" layer="91"/>
 <label x="223.52" y="157.48" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="SCLK"/>
+<wire x1="106.68" y1="78.74" x2="116.84" y2="78.74" width="0.1524" layer="91"/>
+<label x="109.22" y="78.74" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="CS-IN" class="0">
