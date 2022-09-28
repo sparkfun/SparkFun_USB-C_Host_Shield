@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
@@ -212,6 +212,7 @@
 <text x="40.132" y="19.431" size="1.778" layer="21" font="vector" ratio="15">5</text>
 <text x="42.672" y="19.431" size="1.778" layer="21" font="vector" ratio="15">6</text>
 <text x="45.212" y="19.177" size="1.778" layer="21" font="vector" ratio="15">7</text>
+<text x="50.927" y="0.762" size="1.778" layer="16" font="vector" ratio="15" rot="MR0">v10</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -5457,6 +5458,46 @@ design rules under a new name.
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="4,1,adc7c41cad93ab8d"/>
+<approved hash="4,1,e031bb637625b6f2"/>
+<approved hash="4,1,6d2ceed752dd4cbb"/>
+<approved hash="4,1,bab9ca8383ca166c"/>
+<approved hash="4,1,1b90f9aacfc42a8e"/>
+<approved hash="4,1,9624403734896462"/>
+<approved hash="4,1,eed0404b4b333fed"/>
+<approved hash="4,1,647d870629d0b3e4"/>
+<approved hash="4,1,54507ff827f84d5e"/>
+<approved hash="4,1,edd2a327c52beb00"/>
+<approved hash="4,1,e73abab5123640a0"/>
+<approved hash="4,1,4982b4d3f5131cb3"/>
+<approved hash="4,1,52565f902f865f39"/>
+<approved hash="4,1,4e65ba14d0c49553"/>
+<approved hash="4,1,48e7aa1b2d681bcb"/>
+<approved hash="4,16,779ea3b5a45ea7c6"/>
+<approved hash="4,16,0177752e414dd09e"/>
+<approved hash="4,16,27022700a0caa008"/>
+<approved hash="4,16,6536305f0d53ce1a"/>
+<approved hash="4,16,2e3e2f44af26ab0c"/>
+<approved hash="7,39,ef1001437e25fa8e"/>
+<approved hash="7,39,438f4255d974f556"/>
+<approved hash="7,39,2064204a7f327f1c"/>
+<approved hash="7,39,ed10715eb738558e"/>
+<approved hash="7,39,0064004ab132b11c"/>
+<approved hash="7,39,608f0e48d2e9c2d6"/>
+<approved hash="7,39,2864284a6f326f1c"/>
+<approved hash="7,39,3b8fb249fc685e56"/>
+<approved hash="7,39,6d10ed59ad3fd78e"/>
+<approved hash="7,39,248f524f0cee80d6"/>
+<approved hash="7,39,428f0e553bf41dd6"/>
+<approved hash="7,39,7611e8590abfb10f"/>
+<approved hash="7,39,fb8e964f6f6e2757"/>
+<approved hash="7,39,002403cab2b2b15c"/>
+<approved hash="7,39,28242bca6cb26f5c"/>
+<approved hash="7,39,202423ca7cb27f5c"/>
+<approved hash="7,39,e2104c4390a5130e"/>
+<approved hash="7,39,96100e5fb9b90a0e"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
