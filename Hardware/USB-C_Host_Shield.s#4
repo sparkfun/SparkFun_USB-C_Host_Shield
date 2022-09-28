@@ -5967,7 +5967,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="18PF" device="-0603-50V-5%" value="18pF"/>
 <part name="C10" library="SparkFun-Capacitors" deviceset="18PF" device="-0603-50V-5%" value="18pF"/>
-<part name="Y1" library="SparkFun-Clocks" deviceset="CRYSTAL-12MHZ" device=""/>
+<part name="Y1" library="SparkFun-Clocks" deviceset="CRYSTAL-12MHZ" device="" value="12.0mhZ"/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R4" library="SparkFun-Resistors" deviceset="5.1KOHM" device="5.1KOHM-0603-1/10W-1%" value="5.1k"/>
 <part name="R5" library="SparkFun-Resistors" deviceset="5.1KOHM" device="5.1KOHM-0603-1/10W-1%" value="5.1k"/>
@@ -6122,8 +6122,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="57.404" y="35.941" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="Y1" gate="G$1" x="50.8" y="45.72" smashed="yes">
-<attribute name="NAME" x="50.8" y="47.752" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="50.8" y="43.688" size="1.778" layer="96" font="vector" align="top-center"/>
+<attribute name="NAME" x="50.8" y="50.292" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="50.8" y="49.53" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="GND10" gate="1" x="55.88" y="27.94" smashed="yes">
 <attribute name="VALUE" x="55.88" y="27.686" size="1.778" layer="96" font="vector" align="top-center"/>
