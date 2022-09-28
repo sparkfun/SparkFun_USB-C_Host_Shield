@@ -41,7 +41,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -212,6 +212,7 @@
 <text x="40.132" y="19.431" size="1.778" layer="21" font="vector" ratio="15">5</text>
 <text x="42.672" y="19.431" size="1.778" layer="21" font="vector" ratio="15">6</text>
 <text x="45.212" y="19.177" size="1.778" layer="21" font="vector" ratio="15">7</text>
+<text x="50.927" y="0.762" size="1.778" layer="16" font="vector" ratio="15" rot="MR0">v10</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
