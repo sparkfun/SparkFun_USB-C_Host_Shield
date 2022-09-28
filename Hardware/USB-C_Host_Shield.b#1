@@ -4781,9 +4781,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="35.56" y1="51.308" x2="35.56" y2="50.38" width="0.127" layer="1"/>
 <wire x1="35.81" y1="51.558" x2="35.56" y2="51.308" width="0.127" layer="1"/>
 <wire x1="34.81" y1="52.41" x2="34.798" y2="52.398" width="0.127" layer="1"/>
-<wire x1="34.798" y1="52.398" x2="34.798" y2="51.689" width="0.127" layer="1"/>
-<wire x1="35.179" y1="51.308" x2="35.56" y2="51.308" width="0.127" layer="1"/>
-<wire x1="34.798" y1="51.689" x2="35.179" y2="51.308" width="0.127" layer="1"/>
+<wire x1="34.798" y1="52.398" x2="34.798" y2="51.816" width="0.127" layer="1"/>
+<wire x1="35.306" y1="51.308" x2="35.56" y2="51.308" width="0.127" layer="1"/>
+<wire x1="34.798" y1="51.816" x2="35.306" y2="51.308" width="0.127" layer="1"/>
 </signal>
 <signal name="D_N" class="2">
 <contactref element="R2" pad="1"/>
@@ -4802,12 +4802,22 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <signal name="MAX_D_N">
 <contactref element="R2" pad="2"/>
 <contactref element="U5" pad="20"/>
-<wire x1="34.54" y1="41.28" x2="36.83" y2="48.68" width="0" layer="19" extent="1-1"/>
+<wire x1="34.54" y1="41.28" x2="34.54" y2="42.668" width="0.127" layer="1"/>
+<wire x1="35.56" y1="46.101" x2="35.89655" y2="46.43755" width="0.127" layer="1"/>
+<wire x1="36.83" y1="48.006" x2="36.83" y2="48.68" width="0.127" layer="1"/>
+<wire x1="34.54" y1="42.668" x2="35.56" y2="43.688" width="0.127" layer="1"/>
+<wire x1="35.56" y1="43.688" x2="35.56" y2="46.101" width="0.127" layer="1"/>
+<wire x1="35.89655" y1="46.43755" x2="35.89655" y2="47.07255" width="0.127" layer="1"/>
+<wire x1="35.89655" y1="47.07255" x2="36.83" y2="48.006" width="0.127" layer="1"/>
 </signal>
 <signal name="MAX_D_P">
 <contactref element="R3" pad="2"/>
 <contactref element="U5" pad="21"/>
-<wire x1="34.04" y1="41.28" x2="35.56" y2="48.68" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="46.482" x2="35.306" y2="46.228" width="0.127" layer="1"/>
+<wire x1="35.306" y1="43.815" x2="34.04" y2="42.549" width="0.127" layer="1"/>
+<wire x1="34.04" y1="42.549" x2="34.04" y2="41.28" width="0.127" layer="1"/>
+<wire x1="35.56" y1="48.68" x2="35.56" y2="46.482" width="0.127" layer="1"/>
+<wire x1="35.306" y1="46.228" x2="35.306" y2="43.815" width="0.127" layer="1"/>
 </signal>
 <signal name="GPOUT0">
 <contactref element="U5" pad="4"/>

@@ -4470,13 +4470,11 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <contactref element="S1" pad="2"/>
 <contactref element="S1" pad="5"/>
 <contactref element="U1" pad="VIN"/>
-<wire x1="40.736" y1="45.72" x2="42.8435125" y2="45.72" width="0.254" layer="1"/>
-<wire x1="44.2784875" y1="45.72" x2="46.386" y2="45.72" width="0.254" layer="1"/>
 <wire x1="46.386" y1="45.72" x2="47.625" y2="45.72" width="0.254" layer="1"/>
 <wire x1="47.625" y1="45.72" x2="48.26" y2="45.085" width="0.254" layer="1"/>
 <wire x1="48.26" y1="45.085" x2="48.26" y2="39.37" width="0.254" layer="1"/>
 <wire x1="48.26" y1="39.37" x2="50.8" y2="36.83" width="0.254" layer="1"/>
-<wire x1="44.2784875" y1="45.72" x2="42.8435125" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="40.736" y1="45.72" x2="46.386" y2="45.72" width="0.254" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="S1" pad="6"/>
