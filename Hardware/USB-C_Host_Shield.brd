@@ -35,7 +35,7 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
@@ -219,6 +219,7 @@
 <dimension x1="0" y1="2.54" x2="7.62" y2="2.54" x3="3.81" y3="-5.08" textsize="1.778" textratio="15" layer="48" dtype="horizontal" unit="inch"/>
 <dimension x1="45.72" y1="2.54" x2="53.34" y2="3.81" x3="49.53" y3="-13.97" textsize="1.778" textratio="15" layer="48" dtype="horizontal" unit="inch"/>
 <dimension x1="25.4" y1="2.54" x2="27.94" y2="2.54" x3="26.67" y3="-8.89" textsize="1.778" textratio="15" layer="48" dtype="horizontal" unit="inch"/>
+<text x="26.67" y="-31.75" size="1.778" layer="51" font="vector" ratio="10">M. Chodikov</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -4340,9 +4341,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="2.54" y="2.54" smashed="yes" rot="R90"/>
 <element name="FD3" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="46.99" y="57.15" smashed="yes" rot="MR0"/>
 <element name="FD4" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="46.99" y="57.15" smashed="yes"/>
-<element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="3.81" y="-36.83" smashed="yes">
-<attribute name="DESIGNER" value="" x="83.82" y="-115.57" size="1.778" layer="27" display="off"/>
-<attribute name="REV" value="" x="83.82" y="-115.57" size="1.778" layer="27" display="off"/>
+<element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="0" y="-31.75" smashed="yes">
+<attribute name="DESIGNER" value="" x="80.01" y="-110.49" size="1.778" layer="27" display="off"/>
+<attribute name="REV" value="" x="80.01" y="-110.49" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J1" library="SparkFun-Connectors" package="USB-C-16P-2LAYER-PADS" value="USB-C" x="35.56" y="52.07" smashed="yes" rot="R180">
 <attribute name="NAME" x="35.56" y="54.61" size="0.762" layer="25" rot="R180" align="center"/>
