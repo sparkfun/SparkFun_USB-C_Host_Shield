@@ -6243,6 +6243,146 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Jumpers">
+<description>&lt;h3&gt;SparkFun Jumpers&lt;/h3&gt;
+In this library you'll find jumpers, or other semipermanent means of changing current paths. The least permanent form is the solder jumper. These can be changed by adding, removing, or moving solder. In cases that are less likely to be changed we have jumpers that are connected with traces. These can be cut with a razor, or reconnected with solder. Reference designator JP.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SMT-JUMPER_2_NC_TRACE_NO-SILK" urn="urn:adsk.eagle:footprint:39257/1" locally_modified="yes">
+<smd name="1" x="-0.5207" y="0" dx="0.6604" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.5207" y="0" dx="0.6604" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0.127" layer="29">
+<vertex x="-0.1905" y="0.127"/>
+<vertex x="0.1905" y="0.127"/>
+<vertex x="0.1905" y="-0.127"/>
+<vertex x="-0.1905" y="-0.127"/>
+</polygon>
+<polygon width="0.0127" layer="1">
+<vertex x="-0.6985" y="0.127"/>
+<vertex x="0.0254" y="0.127"/>
+<vertex x="0.0254" y="-0.127"/>
+<vertex x="-0.6985" y="-0.127"/>
+</polygon>
+<polygon width="0.0127" layer="1">
+<vertex x="-0.0254" y="0.127"/>
+<vertex x="0.6985" y="0.127"/>
+<vertex x="0.6985" y="-0.127"/>
+<vertex x="-0.0254" y="-0.127"/>
+</polygon>
+</package>
+<package name="SMT-JUMPER_2_NC_TRACE_SILK" urn="urn:adsk.eagle:footprint:39258/1" locally_modified="yes">
+<wire x1="0.762" y1="-1.016" x2="-0.762" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="0.762" y1="1.016" x2="1.2192" y2="0.5588" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.2192" y1="0.5588" x2="-0.762" y2="1.016" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.2192" y1="-0.5588" x2="-0.762" y2="-1.016" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.762" y1="-1.016" x2="1.2192" y2="-0.5588" width="0.2032" layer="21" curve="90"/>
+<wire x1="1.2192" y1="-0.5588" x2="1.2192" y2="0.5588" width="0.2032" layer="21"/>
+<wire x1="-1.2192" y1="-0.5588" x2="-1.2192" y2="0.5588" width="0.2032" layer="21"/>
+<wire x1="-0.762" y1="1.016" x2="0.762" y2="1.016" width="0.2032" layer="21"/>
+<smd name="1" x="-0.5207" y="0" dx="0.6604" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.5207" y="0" dx="0.6604" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0.127" layer="29">
+<vertex x="-0.1905" y="0.127"/>
+<vertex x="0.1905" y="0.127"/>
+<vertex x="0.1905" y="-0.127"/>
+<vertex x="-0.1905" y="-0.127"/>
+</polygon>
+<polygon width="0.0127" layer="1">
+<vertex x="-0.6985" y="0.127"/>
+<vertex x="0.0254" y="0.127"/>
+<vertex x="0.0254" y="-0.127"/>
+<vertex x="-0.6985" y="-0.127"/>
+</polygon>
+<polygon width="0.0127" layer="1">
+<vertex x="-0.0254" y="0.127"/>
+<vertex x="0.6985" y="0.127"/>
+<vertex x="0.6985" y="-0.127"/>
+<vertex x="-0.0254" y="-0.127"/>
+</polygon>
+</package>
+</packages>
+<packages3d>
+<package3d name="SMT-JUMPER_2_NC_TRACE_NO-SILK" urn="urn:adsk.eagle:package:39286/1" type="box">
+<packageinstances>
+<packageinstance name="SMT-JUMPER_2_NC_TRACE_NO-SILK"/>
+</packageinstances>
+</package3d>
+<package3d name="SMT-JUMPER_2_NC_TRACE_SILK" urn="urn:adsk.eagle:package:39281/1" type="box">
+<packageinstances>
+<packageinstance name="SMT-JUMPER_2_NC_TRACE_SILK"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="SMT-JUMPER_2_NC_TRACE">
+<wire x1="0.381" y1="0.635" x2="1.016" y2="0" width="1.27" layer="94" curve="-90" cap="flat"/>
+<wire x1="1.016" y1="0" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-90" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
+<text x="0" y="3.048" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.048" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JUMPER-SMT_2_NC_TRACE" prefix="JP">
+<description>&lt;h3&gt;Normally closed trace jumper&lt;/h3&gt;
+&lt;p&gt;This jumper has a trace between two pads so it's normally closed (NC). Use a razor knife to open the connection. For best results follow the IPC guidelines for cutting traces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cutout at least 0.063 mm (0.005 in).&lt;/li&gt;
+&lt;li&gt;Remove all loose material to clean up the cut area.&lt;/li&gt;
+&lt;li&gt;Seal the cut with an approved epoxy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Reapply solder to reclose the connection.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SMT-JUMPER_2_NC_TRACE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_NO-SILK" package="SMT-JUMPER_2_NC_TRACE_NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39286/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK" package="SMT-JUMPER_2_NC_TRACE_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39281/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6319,21 +6459,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="S4" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-SMD-AYZ0202" value="Power_Switch"/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
+<part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="165.608" y="11.43" size="2.54" layer="94">M. Chodikov</text>
 <text x="239.268" y="6.35" size="2.54" layer="94">v01</text>
-<text x="66.04" y="177.8" size="2.54" layer="94">Power Regulator</text>
-<text x="190.5" y="106.68" size="2.54" layer="94">Arduino Shield</text>
-<text x="63.5" y="104.14" size="2.54" layer="94">USB Peripheral</text>
+<text x="66.04" y="177.8" size="2.54" layer="94" font="vector">Power Regulator</text>
+<text x="190.5" y="106.68" size="2.54" layer="94" font="vector">Arduino Shield</text>
+<text x="63.5" y="104.14" size="2.54" layer="94" font="vector">USB Peripheral</text>
 <wire x1="0" y1="114.3" x2="147.32" y2="114.3" width="0.2032" layer="94" style="shortdash"/>
 <wire x1="147.32" y1="114.3" x2="165.1" y2="114.3" width="0.2032" layer="94" style="shortdash"/>
 <wire x1="165.1" y1="114.3" x2="165.1" y2="185.42" width="0.2032" layer="94" style="shortdash"/>
 <wire x1="147.32" y1="35.56" x2="147.32" y2="114.3" width="0.2032" layer="94" style="shortdash"/>
 <wire x1="165.1" y1="114.3" x2="248.92" y2="114.3" width="0.2032" layer="94" style="shortdash"/>
-<text x="198.12" y="177.8" size="2.54" layer="94">Hex Inverter</text>
+<text x="198.12" y="177.8" size="2.54" layer="94" font="vector">Hex Inverter</text>
 <text x="187.96" y="175.26" size="1.27" layer="97">Translate 5V Arduino signals to 3.3V for the MAX3421</text>
 </plain>
 <instances>
@@ -6526,7 +6668,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="C2" gate="G$1" x="78.74" y="147.32" smashed="yes">
 <attribute name="NAME" x="80.264" y="150.241" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="80.264" y="145.161" size="1.778" layer="96" font="vector"/>
+<attribute name="VALUE" x="75.184" y="145.161" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="C1" gate="G$1" x="35.56" y="147.32" smashed="yes">
 <attribute name="NAME" x="37.084" y="150.241" size="1.778" layer="95" font="vector"/>
@@ -6551,6 +6693,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="SUPPLY9" gate="G$1" x="177.8" y="76.2" smashed="yes">
 <attribute name="VALUE" x="177.8" y="78.994" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="GND16" gate="1" x="22.86" y="17.78" smashed="yes">
+<attribute name="VALUE" x="22.86" y="17.526" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="JP1" gate="G$1" x="22.86" y="27.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.812" y="27.94" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="25.908" y="27.94" size="1.778" layer="96" font="vector" rot="R90" align="center" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -6762,6 +6911,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="58.42" y1="129.54" x2="58.42" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="124.46" x2="68.58" y2="124.46" width="0.1524" layer="91"/>
 <junction x="68.58" y="124.46"/>
+</segment>
+<segment>
+<wire x1="22.86" y1="22.86" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -7211,12 +7365,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="93.98" y1="152.4" x2="93.98" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="J1" gate="J1" pin="SHLD"/>
+<wire x1="17.78" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="53.34" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="208,1,20.32,83.82,5V,sup,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
@@ -7224,6 +7383,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
