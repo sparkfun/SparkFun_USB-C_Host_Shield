@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
@@ -41,7 +41,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -5286,9 +5286,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="-19.05" y="-47.498" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="-19.05" y="-49.022" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="R10" library="SparkFun-Resistors" package="0603" value="56k" x="-19.05" y="-52.07" smashed="yes">
-<attribute name="NAME" x="-19.05" y="-51.308" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="VALUE" x="-19.05" y="-52.832" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="R10" library="SparkFun-Resistors" package="0603" value="56k" x="34.29" y="49.53" smashed="yes" rot="R270">
+<attribute name="NAME" x="35.052" y="49.53" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="33.528" y="49.53" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 </elements>
 <signals>
@@ -5872,7 +5872,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="33.81" y1="52.41" x2="33.81" y2="51.661" width="0.2032" layer="1"/>
 <wire x1="33.81" y1="51.661" x2="34.29" y2="51.181" width="0.2032" layer="1"/>
 <contactref element="R10" pad="1"/>
-<wire x1="-19.9" y1="-52.07" x2="34.29" y2="51.181" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="50.38" x2="34.29" y2="51.181" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBUS">
 <contactref element="J1" pad="VBUS1"/>
@@ -5911,7 +5911,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <contactref element="J4" pad="1"/>
 <contactref element="R9" pad="2"/>
 <contactref element="R10" pad="2"/>
-<wire x1="-18.2" y1="-48.26" x2="-18.2" y2="-52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="-18.2" y1="-48.26" x2="34.29" y2="48.68" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.05" y1="-35.56" x2="-18.2" y2="-48.26" width="0" layer="19" extent="1-1"/>
 <wire x1="10.826" y1="38.45" x2="-19.05" y2="-35.56" width="0" layer="19" extent="1-1"/>
 </signal>

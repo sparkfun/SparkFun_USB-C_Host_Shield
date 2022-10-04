@@ -20,34 +20,34 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -5184,16 +5184,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="PROD_ID" value="RES-08270" x="-62.23" y="-35.56" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="34.798" y="49.53" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="R4" library="SparkFun-Resistors" package="0603" value="5.1k" x="34.29" y="49.53" smashed="yes" rot="R90">
-<attribute name="NAME" x="33.528" y="49.53" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-12083" x="132.08" y="138.43" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="35.052" y="49.53" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
-</element>
-<element name="R5" library="SparkFun-Resistors" package="0603" value="5.1k" x="38.1" y="49.53" smashed="yes" rot="R90">
-<attribute name="NAME" x="37.338" y="49.53" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-12083" x="140.97" y="64.77" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="38.862" y="49.53" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
-</element>
 <element name="R6" library="SparkFun-Resistors" package="0603" value="2.2k" x="37.592" y="45.212" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.83" y="45.212" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-08272" x="140.462" y="64.262" size="1.778" layer="27" rot="R90" display="off"/>
@@ -5291,6 +5281,14 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="PROD_ID" value="SWCH-08179" x="-15.24" y="-41.91" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="SF_ID" value="COM-00597" x="-15.24" y="-41.91" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="-11.43" y="-41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+</element>
+<element name="R9" library="SparkFun-Resistors" package="0603" value="56k" x="-19.05" y="-48.26" smashed="yes">
+<attribute name="NAME" x="-19.05" y="-47.498" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="-19.05" y="-49.022" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="R10" library="SparkFun-Resistors" package="0603" value="56k" x="-19.05" y="-52.07" smashed="yes">
+<attribute name="NAME" x="-19.05" y="-51.308" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="-19.05" y="-52.832" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 </elements>
 <signals>
@@ -5397,8 +5395,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <contactref element="U5" pad="19"/>
 <contactref element="C9" pad="2"/>
 <contactref element="C10" pad="2"/>
-<contactref element="R4" pad="1"/>
-<contactref element="R5" pad="1"/>
 <contactref element="S2" pad="1"/>
 <contactref element="U3" pad="8"/>
 <contactref element="U6" pad="2"/>
@@ -5863,20 +5859,20 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 </signal>
 <signal name="CC1">
 <contactref element="J1" pad="A5"/>
-<contactref element="R5" pad="2"/>
 <wire x1="36.81" y1="52.41" x2="36.83" y2="52.39" width="0.254" layer="1"/>
 <wire x1="36.83" y1="52.39" x2="36.83" y2="51.689" width="0.2032" layer="1"/>
 <wire x1="36.83" y1="51.689" x2="37.084" y2="51.435" width="0.2032" layer="1"/>
 <wire x1="37.719" y1="51.435" x2="38.1" y2="51.054" width="0.2032" layer="1"/>
-<wire x1="38.1" y1="51.054" x2="38.1" y2="50.38" width="0.2032" layer="1"/>
 <wire x1="37.084" y1="51.435" x2="37.719" y2="51.435" width="0.2032" layer="1"/>
+<contactref element="R9" pad="1"/>
+<wire x1="-19.9" y1="-48.26" x2="38.1" y2="51.054" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CC2">
 <contactref element="J1" pad="B5"/>
-<contactref element="R4" pad="2"/>
 <wire x1="33.81" y1="52.41" x2="33.81" y2="51.661" width="0.2032" layer="1"/>
 <wire x1="33.81" y1="51.661" x2="34.29" y2="51.181" width="0.2032" layer="1"/>
-<wire x1="34.29" y1="51.181" x2="34.29" y2="50.38" width="0.2032" layer="1"/>
+<contactref element="R10" pad="1"/>
+<wire x1="-19.9" y1="-52.07" x2="34.29" y2="51.181" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBUS">
 <contactref element="J1" pad="VBUS1"/>
@@ -5913,6 +5909,10 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="11.811" y1="45.085" x2="10.795" y2="44.069" width="0.254" layer="1"/>
 <wire x1="10.826" y1="38.45" x2="10.795" y2="38.481" width="0.254" layer="1"/>
 <contactref element="J4" pad="1"/>
+<contactref element="R9" pad="2"/>
+<contactref element="R10" pad="2"/>
+<wire x1="-18.2" y1="-48.26" x2="-18.2" y2="-52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.05" y1="-35.56" x2="-18.2" y2="-48.26" width="0" layer="19" extent="1-1"/>
 <wire x1="10.826" y1="38.45" x2="-19.05" y2="-35.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK-IN">
@@ -6295,6 +6295,10 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="11.75" y1="26.7001" x2="11.75" y2="29.144" width="0.254" layer="1"/>
 <wire x1="11.75" y1="29.144" x2="11.684" y2="29.21" width="0.254" layer="1"/>
 <contactref element="J4" pad="2"/>
+<contactref element="S1" pad="1"/>
+<contactref element="S1" pad="2"/>
+<wire x1="-15.24" y1="-39.085" x2="-17.74" y2="-39.085" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.51" y1="-35.56" x2="-17.74" y2="-39.085" width="0" layer="19" extent="1-1"/>
 <wire x1="11.75" y1="26.7001" x2="-16.51" y2="-35.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
@@ -6328,6 +6332,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <contactref element="JP1" pad="2"/>
 <wire x1="41.3893" y1="57.15" x2="39.893" y2="57.15" width="0.254" layer="1"/>
 <wire x1="39.893" y1="57.15" x2="39.878" y2="57.165" width="0.254" layer="1"/>
+</signal>
+<signal name="N$2">
+<contactref element="S1" pad="3"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
