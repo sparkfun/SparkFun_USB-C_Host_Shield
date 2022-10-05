@@ -5598,7 +5598,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <vertex x="2.54" y="0"/>
 </polygon>
 <wire x1="33.02" y1="30.265" x2="33.235" y2="30.48" width="0.254" layer="1"/>
-<wire x1="33.235" y1="30.48" x2="34.29" y2="30.48" width="0.254" layer="1"/>
 <via x="6.35" y="20.955" extent="1-16" drill="0.381"/>
 <via x="5.08" y="1.27" extent="1-16" drill="0.381"/>
 <via x="5.08" y="6.35" extent="1-16" drill="0.381"/>

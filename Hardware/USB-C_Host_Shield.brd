@@ -5597,7 +5597,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <vertex x="50.8" y="0"/>
 <vertex x="2.54" y="0"/>
 </polygon>
-<wire x1="33.02" y1="30.265" x2="33.235" y2="30.48" width="0.254" layer="1"/>
 <via x="6.35" y="20.955" extent="1-16" drill="0.381"/>
 <via x="5.08" y="1.27" extent="1-16" drill="0.381"/>
 <via x="5.08" y="6.35" extent="1-16" drill="0.381"/>
@@ -5648,7 +5647,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="32.385" y1="51.689" x2="32.385" y2="52.36" width="0.2032" layer="1"/>
 <wire x1="32.385" y1="52.36" x2="32.335" y2="52.41" width="0.2032" layer="1"/>
 <wire x1="31.75" y1="51.562" x2="31.623" y2="51.435" width="0.2032" layer="1"/>
-<wire x1="31.623" y1="51.435" x2="30.988" y2="51.435" width="0.2032" layer="1"/>
 <via x="8.89" y="34.29" extent="1-16" drill="0.381"/>
 <via x="5.08" y="31.75" extent="1-16" drill="0.381"/>
 <via x="22.225" y="51.435" extent="1-16" drill="0.381"/>
@@ -5659,8 +5657,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="34.29" y="39.37" extent="1-16" drill="0.381"/>
 <via x="37.211" y="39.37" extent="1-16" drill="0.381"/>
 <wire x1="38.785" y1="52.41" x2="38.785" y2="51.7609" width="0.254" layer="1"/>
-<wire x1="39.1109" y1="51.435" x2="39.497" y2="51.435" width="0.254" layer="1"/>
-<wire x1="38.785" y1="51.7609" x2="39.1109" y2="51.435" width="0.254" layer="1"/>
 <via x="12.065" y="34.29" extent="1-16" drill="0.381"/>
 <via x="19.05" y="38.1" extent="1-16" drill="0.381"/>
 <via x="24.13" y="36.83" extent="1-16" drill="0.381"/>
@@ -5718,6 +5714,8 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="34.29" y="30.48" extent="1-16" drill="0.381"/>
 <via x="44.45" y="39.37" extent="1-16" drill="0.381"/>
 <via x="10.795" y="52.705" extent="1-16" drill="0.381"/>
+<wire x1="39.1109" y1="51.435" x2="39.497" y2="51.435" width="0.254" layer="1"/>
+<wire x1="38.785" y1="51.7609" x2="39.1109" y2="51.435" width="0.254" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="D1" pad="A"/>
