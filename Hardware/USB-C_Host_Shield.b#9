@@ -5695,6 +5695,10 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="20.32" y="58.42" extent="1-16" drill="0.381"/>
 <via x="5.08" y="50.8" extent="1-16" drill="0.381"/>
 <via x="5.715" y="38.1" extent="1-16" drill="0.381"/>
+<via x="10.795" y="41.91" extent="1-16" drill="0.381"/>
+<via x="11.43" y="46.99" extent="1-16" drill="0.381"/>
+<via x="10.16" y="45.72" extent="1-16" drill="0.381"/>
+<via x="10.16" y="48.26" extent="1-16" drill="0.381"/>
 </signal>
 <signal name="N$7">
 <contactref element="D1" pad="A"/>
