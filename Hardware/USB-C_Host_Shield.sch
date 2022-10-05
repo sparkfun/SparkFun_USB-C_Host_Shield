@@ -7252,7 +7252,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U5" library="SparkFun-IC-Microcontroller" deviceset="MAX3421" device=""/>
 <part name="R2" library="SparkFun-Resistors" deviceset="33OHM" device="-0603-1/10W-1%" value="33"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="33OHM" device="-0603-1/10W-1%" value="33"/>
-<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_08" device="&quot;" value="GPIN"/>
@@ -7290,8 +7289,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="S1" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-SMD-AYZ0202"/>
 <part name="R9" library="SparkFun-Resistors" deviceset="56KOHM" device="" value="56k"/>
 <part name="R10" library="SparkFun-Resistors" deviceset="56KOHM" device="" value="56k"/>
-<part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
-<part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7392,9 +7389,6 @@ for boards power supply</text>
 <instance part="R3" gate="G$1" x="48.26" y="63.5" smashed="yes">
 <attribute name="NAME" x="48.26" y="65.024" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="48.26" y="61.976" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
-<instance part="SUPPLY3" gate="G$1" x="20.32" y="83.82" smashed="yes">
-<attribute name="VALUE" x="20.32" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="GND8" gate="1" x="22.86" y="45.72" smashed="yes">
 <attribute name="VALUE" x="22.86" y="45.466" size="1.778" layer="96" font="vector" align="top-center"/>
@@ -7529,12 +7523,6 @@ for boards power supply</text>
 <instance part="R10" gate="G$1" x="38.1" y="78.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.576" y="76.2" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="34.544" y="83.82" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="SUPPLY10" gate="G$1" x="33.02" y="88.9" smashed="yes">
-<attribute name="VALUE" x="33.02" y="91.694" size="1.778" layer="96" font="vector" align="bottom-center"/>
-</instance>
-<instance part="SUPPLY11" gate="G$1" x="38.1" y="88.9" smashed="yes">
-<attribute name="VALUE" x="38.1" y="91.694" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -8068,11 +8056,6 @@ for boards power supply</text>
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="F1" gate="F1" pin="2"/>
-<pinref part="SUPPLY3" gate="G$1" pin="5V"/>
-<wire x1="20.32" y1="81.28" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="5V"/>
 <wire x1="187.96" y1="68.58" x2="182.88" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="68.58" x2="182.88" y2="78.74" width="0.1524" layer="91"/>
@@ -8083,16 +8066,6 @@ for boards power supply</text>
 <wire x1="68.58" y1="165.1" x2="68.58" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="J4" gate="J$1" pin="1"/>
 <wire x1="68.58" y1="162.56" x2="78.74" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="83.82" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="SUPPLY10" gate="G$1" pin="5V"/>
-</segment>
-<segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="83.82" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="SUPPLY11" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="SCK-IN" class="0">
@@ -8170,6 +8143,21 @@ for boards power supply</text>
 <pinref part="S1" gate="1" pin="P"/>
 <wire x1="114.3" y1="157.48" x2="104.14" y2="157.48" width="0.1524" layer="91"/>
 <label x="104.14" y="157.48" size="1.27" layer="95" font="vector"/>
+</segment>
+<segment>
+<pinref part="F1" gate="F1" pin="2"/>
+<wire x1="20.32" y1="81.28" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
+<label x="20.32" y="83.82" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="83.82" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
+<label x="33.02" y="88.9" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="83.82" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
+<label x="38.1" y="88.9" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$6" class="0">

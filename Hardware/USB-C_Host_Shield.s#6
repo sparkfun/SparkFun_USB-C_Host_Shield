@@ -7311,6 +7311,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="78.74" y="144.78" size="1.27" layer="97">Use jumper to connect
 between 5V and Vin
 for boards power supply</text>
+<text x="20.32" y="167.64" size="1.27" layer="97">Vin = 5V-16V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -7751,7 +7752,7 @@ for boards power supply</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="D7"/>
 <wire x1="213.36" y1="76.2" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
-<label x="223.52" y="76.2" size="1.27" layer="95" xref="yes"/>
+<label x="223.52" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="4A"/>
@@ -7763,25 +7764,25 @@ for boards power supply</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="D8"/>
 <wire x1="213.36" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
-<label x="223.52" y="73.66" size="1.27" layer="95" xref="yes"/>
+<label x="223.52" y="73.66" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="GPX"/>
 <wire x1="78.74" y1="33.02" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
-<label x="68.58" y="33.02" size="1.27" layer="95"/>
+<label x="68.58" y="33.02" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="INT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="*D9"/>
 <wire x1="223.52" y1="71.12" x2="213.36" y2="71.12" width="0.1524" layer="91"/>
-<label x="223.52" y="71.12" size="1.27" layer="95" xref="yes"/>
+<label x="223.52" y="71.12" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="INT"/>
 <wire x1="78.74" y1="40.64" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="40.64" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
-<label x="68.58" y="40.64" size="1.27" layer="95"/>
+<label x="68.58" y="40.64" size="1.27" layer="95" font="vector"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -7789,7 +7790,7 @@ for boards power supply</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="*D10"/>
 <wire x1="213.36" y1="68.58" x2="223.52" y2="68.58" width="0.1524" layer="91"/>
-<label x="223.52" y="68.58" size="1.27" layer="95" xref="yes"/>
+<label x="223.52" y="68.58" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="2A"/>
@@ -7801,7 +7802,7 @@ for boards power supply</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="*D11"/>
 <wire x1="213.36" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
-<label x="223.52" y="66.04" size="1.27" layer="95" xref="yes"/>
+<label x="223.52" y="66.04" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="3A"/>
@@ -7813,19 +7814,19 @@ for boards power supply</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="D12"/>
 <wire x1="213.36" y1="63.5" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
-<label x="223.52" y="63.5" size="1.27" layer="95" xref="yes"/>
+<label x="223.52" y="63.5" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="POCI"/>
 <wire x1="114.3" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
-<label x="114.3" y="71.12" size="1.27" layer="95" xref="yes"/>
+<label x="114.3" y="71.12" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="D13"/>
 <wire x1="213.36" y1="60.96" x2="223.52" y2="60.96" width="0.1524" layer="91"/>
-<label x="223.52" y="60.96" size="1.27" layer="95" xref="yes"/>
+<label x="223.52" y="60.96" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="1A"/>
@@ -7838,7 +7839,7 @@ for boards power supply</text>
 <pinref part="J1" gate="J1" pin="D+"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
-<label x="20.32" y="63.5" size="1.27" layer="95"/>
+<label x="20.32" y="63.5" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="D_N" class="2">
@@ -7846,7 +7847,7 @@ for boards power supply</text>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="J1" gate="J1" pin="D-"/>
 <wire x1="53.34" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
-<label x="20.32" y="60.96" size="1.27" layer="95"/>
+<label x="20.32" y="60.96" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="MAX_D_N" class="0">
@@ -7854,7 +7855,7 @@ for boards power supply</text>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="D-"/>
 <wire x1="63.5" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
-<label x="68.58" y="60.96" size="1.27" layer="95"/>
+<label x="68.58" y="60.96" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="MAX_D_P" class="0">
@@ -7862,7 +7863,7 @@ for boards power supply</text>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="D+"/>
 <wire x1="53.34" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
-<label x="68.58" y="63.5" size="1.27" layer="95"/>
+<label x="68.58" y="63.5" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="GPOUT0" class="0">
@@ -8103,7 +8104,7 @@ for boards power supply</text>
 <segment>
 <pinref part="U5" gate="G$1" pin="SCLK"/>
 <wire x1="109.22" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
-<label x="114.3" y="78.74" size="1.27" layer="95" xref="yes"/>
+<label x="114.3" y="78.74" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="CS-IN" class="0">
@@ -8115,7 +8116,7 @@ for boards power supply</text>
 <segment>
 <pinref part="U5" gate="G$1" pin="!CS"/>
 <wire x1="109.22" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
-<label x="114.3" y="76.2" size="1.27" layer="95" xref="yes"/>
+<label x="114.3" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PICO-IN" class="0">
@@ -8127,7 +8128,7 @@ for boards power supply</text>
 <segment>
 <pinref part="U5" gate="G$1" pin="PICO"/>
 <wire x1="109.22" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
-<label x="114.3" y="73.66" size="1.27" layer="95" xref="yes"/>
+<label x="114.3" y="73.66" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="RESET-IN" class="0">
@@ -8139,7 +8140,7 @@ for boards power supply</text>
 <segment>
 <pinref part="U5" gate="G$1" pin="!RES"/>
 <wire x1="78.74" y1="43.18" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
-<label x="68.58" y="43.18" size="1.27" layer="95"/>
+<label x="68.58" y="43.18" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="N$1" class="0">

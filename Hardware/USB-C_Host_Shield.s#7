@@ -7290,6 +7290,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="S1" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-SMD-AYZ0202"/>
 <part name="R9" library="SparkFun-Resistors" deviceset="56KOHM" device="" value="56k"/>
 <part name="R10" library="SparkFun-Resistors" deviceset="56KOHM" device="" value="56k"/>
+<part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7309,6 +7311,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="78.74" y="144.78" size="1.27" layer="97">Use jumper to connect
 between 5V and Vin
 for boards power supply</text>
+<text x="20.32" y="167.64" size="1.27" layer="97">Vin = 5V-16V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -7519,13 +7522,19 @@ for boards power supply</text>
 <attribute name="NAME" x="118.11" y="160.528" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="117.856" y="154.178" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="R9" gate="G$1" x="33.02" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="31.496" y="78.74" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="29.464" y="86.36" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R9" gate="G$1" x="33.02" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.496" y="76.2" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="29.464" y="83.82" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="R10" gate="G$1" x="38.1" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="36.576" y="78.74" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="34.544" y="86.36" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R10" gate="G$1" x="38.1" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.576" y="76.2" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="34.544" y="83.82" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="33.02" y="88.9" smashed="yes">
+<attribute name="VALUE" x="33.02" y="91.694" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY11" gate="G$1" x="38.1" y="88.9" smashed="yes">
+<attribute name="VALUE" x="38.1" y="91.694" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -7760,7 +7769,7 @@ for boards power supply</text>
 <segment>
 <pinref part="U5" gate="G$1" pin="GPX"/>
 <wire x1="78.74" y1="33.02" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
-<label x="68.58" y="33.02" size="1.27" layer="95"/>
+<label x="68.58" y="33.02" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="INT" class="0">
@@ -7773,7 +7782,7 @@ for boards power supply</text>
 <pinref part="U5" gate="G$1" pin="INT"/>
 <wire x1="78.74" y1="40.64" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="40.64" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
-<label x="68.58" y="40.64" size="1.27" layer="95"/>
+<label x="68.58" y="40.64" size="1.27" layer="95" font="vector"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -7830,7 +7839,7 @@ for boards power supply</text>
 <pinref part="J1" gate="J1" pin="D+"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
-<label x="20.32" y="63.5" size="1.27" layer="95"/>
+<label x="20.32" y="63.5" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="D_N" class="2">
@@ -7838,7 +7847,7 @@ for boards power supply</text>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="J1" gate="J1" pin="D-"/>
 <wire x1="53.34" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
-<label x="20.32" y="60.96" size="1.27" layer="95"/>
+<label x="20.32" y="60.96" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="MAX_D_N" class="0">
@@ -7846,7 +7855,7 @@ for boards power supply</text>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="D-"/>
 <wire x1="63.5" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
-<label x="68.58" y="60.96" size="1.27" layer="95"/>
+<label x="68.58" y="60.96" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="MAX_D_P" class="0">
@@ -7854,7 +7863,7 @@ for boards power supply</text>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="D+"/>
 <wire x1="53.34" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
-<label x="68.58" y="63.5" size="1.27" layer="95"/>
+<label x="68.58" y="63.5" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="GPOUT0" class="0">
@@ -8038,7 +8047,7 @@ for boards power supply</text>
 <pinref part="J1" gate="J1" pin="CC1"/>
 <wire x1="17.78" y1="58.42" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="58.42" x2="33.02" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="58.42" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CC2" class="0">
@@ -8046,7 +8055,7 @@ for boards power supply</text>
 <pinref part="J1" gate="J1" pin="CC2"/>
 <wire x1="17.78" y1="55.88" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="55.88" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="55.88" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -8074,6 +8083,16 @@ for boards power supply</text>
 <wire x1="68.58" y1="165.1" x2="68.58" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="J4" gate="J$1" pin="1"/>
 <wire x1="68.58" y1="162.56" x2="78.74" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="83.82" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="G$1" pin="5V"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="83.82" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="SUPPLY11" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="SCK-IN" class="0">
@@ -8121,7 +8140,7 @@ for boards power supply</text>
 <segment>
 <pinref part="U5" gate="G$1" pin="!RES"/>
 <wire x1="78.74" y1="43.18" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
-<label x="68.58" y="43.18" size="1.27" layer="95"/>
+<label x="68.58" y="43.18" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="N$1" class="0">
