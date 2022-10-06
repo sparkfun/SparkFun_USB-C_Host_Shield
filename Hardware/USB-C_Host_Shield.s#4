@@ -11652,7 +11652,7 @@ Diode with low voltage drop</description>
 <sheets>
 <sheet>
 <plain>
-<text x="165.608" y="11.43" size="2.54" layer="94">M. Chodikov</text>
+<text x="165.608" y="11.43" size="2.54" layer="94" font="vector">M. Chodikov</text>
 <text x="239.268" y="6.35" size="2.54" layer="94">v01</text>
 <text x="78.74" y="177.8" size="2.54" layer="94" font="vector">Power Select &amp; Regulator</text>
 <text x="190.5" y="106.68" size="2.54" layer="94" font="vector">Arduino Shield</text>
@@ -11738,9 +11738,9 @@ to GND</text>
 <attribute name="NAME" x="81.28" y="81.28" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="81.28" y="20.32" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="R2" gate="G$1" x="58.42" y="60.96" smashed="yes">
-<attribute name="NAME" x="58.42" y="62.484" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="60.96" y="59.436" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="R2" gate="G$1" x="57.658" y="60.96" smashed="yes">
+<attribute name="NAME" x="57.658" y="62.484" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="60.198" y="59.436" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="R3" gate="G$1" x="48.26" y="63.5" smashed="yes">
 <attribute name="NAME" x="48.26" y="65.024" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -11767,16 +11767,16 @@ to GND</text>
 <attribute name="NAME" x="49.784" y="41.021" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="49.784" y="35.941" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C10" gate="G$1" x="58.42" y="38.1" smashed="yes">
-<attribute name="NAME" x="58.928" y="40.767" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="59.944" y="35.941" size="1.778" layer="96" font="vector"/>
+<instance part="C10" gate="G$1" x="58.42" y="33.02" smashed="yes">
+<attribute name="NAME" x="58.928" y="35.687" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="59.944" y="30.861" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="Y1" gate="G$1" x="53.34" y="45.72" smashed="yes">
 <attribute name="NAME" x="53.34" y="50.292" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="53.34" y="49.53" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="GND10" gate="1" x="58.42" y="30.48" smashed="yes">
-<attribute name="VALUE" x="58.42" y="30.226" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND10" gate="1" x="58.42" y="25.4" smashed="yes">
+<attribute name="VALUE" x="58.42" y="25.146" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="S2" gate="G$1" x="170.18" y="76.2" smashed="yes">
 <attribute name="NAME" x="170.18" y="77.724" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -12092,7 +12092,7 @@ to GND</text>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="33.02" x2="58.42" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="27.94" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -12173,8 +12173,8 @@ to GND</text>
 <pinref part="U5" gate="G$1" pin="INT"/>
 <wire x1="78.74" y1="40.64" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="40.64" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
-<label x="68.58" y="40.64" size="1.27" layer="95"/>
 <pinref part="R6" gate="G$1" pin="1"/>
+<label x="63.5" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CS" class="0">
@@ -12236,14 +12236,14 @@ to GND</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="J1" gate="J1" pin="D-"/>
-<wire x1="53.34" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="52.578" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MAX_D_N" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="D-"/>
-<wire x1="63.5" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="62.738" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MAX_D_P" class="0">
@@ -12414,7 +12414,7 @@ to GND</text>
 <pinref part="Y1" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="45.72" x2="58.42" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="45.72" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="45.72" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="45.72" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
 <junction x="58.42" y="45.72"/>
 <pinref part="U5" gate="G$1" pin="XI"/>
@@ -12508,9 +12508,6 @@ to GND</text>
 <pinref part="U3" gate="G$1" pin="4Y"/>
 <wire x1="228.6" y1="147.32" x2="220.98" y2="147.32" width="0.1524" layer="91"/>
 <label x="228.6" y="147.32" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<label x="71.12" y="45.72" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="!RES"/>
