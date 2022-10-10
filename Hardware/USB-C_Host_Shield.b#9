@@ -6732,7 +6732,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="VALUE" x="32.258" y="28.575" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$2" library="output" package="POWER23" value="" x="23.876" y="47.752" smashed="yes"/>
-<element name="U$4" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.2" value="" x="28.702" y="32.004" smashed="yes"/>
+<element name="U$4" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.2" value="" x="44.45" y="41.656" smashed="yes"/>
 <element name="U$6" library="output" package="RESET25" value="" x="41.91" y="28.702" smashed="yes"/>
 <element name="U$5" library="output" package="ON26" value="" x="17.691" y="53.743" smashed="yes"/>
 <element name="U$7" library="output" package="OFF27" value="" x="12.975" y="53.783" smashed="yes"/>
@@ -6764,7 +6764,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 </element>
 <element name="U$15" library="output" package="MAIN40" value="" x="8.89" y="50.673" smashed="yes"/>
 <element name="U$14" library="output" package="POWER38" value="" x="8.89" y="49.403" smashed="yes"/>
-<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="OSHW-LOGOM" x="44.45" y="50.8" smashed="yes"/>
+<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="OSHW-LOGOM" x="44.45" y="50.038" smashed="yes"/>
 <element name="U$3" library="output" package="GPIN42" value="" x="16.129" y="19.685" smashed="yes"/>
 <element name="U$16" library="output" package="GPOUT44" value="" x="35.687" y="19.812" smashed="yes"/>
 <element name="U$17" library="output" package="045" value="" x="28.067" y="17.78" smashed="yes"/>
@@ -7020,10 +7020,8 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="44.45" y="45.72" extent="1-16" drill="0.381"/>
 <via x="46.99" y="45.72" extent="1-16" drill="0.381"/>
 <via x="41.91" y="43.18" extent="1-16" drill="0.381"/>
-<via x="44.45" y="43.18" extent="1-16" drill="0.381"/>
 <via x="46.99" y="43.18" extent="1-16" drill="0.381"/>
 <via x="41.91" y="40.64" extent="1-16" drill="0.381"/>
-<via x="44.45" y="40.64" extent="1-16" drill="0.381"/>
 <via x="46.99" y="40.64" extent="1-16" drill="0.381"/>
 <via x="45.72" y="35.56" extent="1-16" drill="0.381"/>
 <via x="45.72" y="33.02" extent="1-16" drill="0.381"/>

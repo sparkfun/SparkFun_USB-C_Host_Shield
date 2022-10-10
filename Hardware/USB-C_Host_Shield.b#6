@@ -6732,11 +6732,11 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="VALUE" x="32.258" y="28.575" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$2" library="output" package="POWER23" value="" x="23.876" y="47.752" smashed="yes"/>
-<element name="U$4" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.2" value="" x="44.45" y="41.656" smashed="yes"/>
+<element name="U$4" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.2" value="" x="44.45" y="37.846" smashed="yes"/>
 <element name="U$6" library="output" package="RESET25" value="" x="41.91" y="28.702" smashed="yes"/>
 <element name="U$5" library="output" package="ON26" value="" x="17.691" y="53.743" smashed="yes"/>
 <element name="U$7" library="output" package="OFF27" value="" x="12.975" y="53.783" smashed="yes"/>
-<element name="U$8" library="output" package="ANALOG_IN28" value="" x="48.006" y="46.482" smashed="yes" rot="R90"/>
+<element name="U$8" library="output" package="ANALOG_IN28" value="" x="48.006" y="46.609" smashed="yes" rot="R90"/>
 <element name="U$9" library="output" package="USB#C_HOST_SHIELD32" value="" x="26.67" y="19.05" smashed="yes" rot="MR0"/>
 <element name="U$11" library="output" package="SHLD#33" value="" x="45.466" y="54.61" smashed="yes"/>
 <element name="JP1" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NC_TRACE_SILK" package3d_urn="urn:adsk.eagle:package:39281/1" value="JUMPER-SMT_2_NC_TRACE_SILK" x="41.91" y="54.61" smashed="yes" rot="R180">
@@ -6764,7 +6764,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 </element>
 <element name="U$15" library="output" package="MAIN40" value="" x="8.89" y="50.673" smashed="yes"/>
 <element name="U$14" library="output" package="POWER38" value="" x="8.89" y="49.403" smashed="yes"/>
-<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="OSHW-LOGOM" x="44.45" y="50.8" smashed="yes"/>
+<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="OSHW-LOGOM" x="44.45" y="48.26" smashed="yes"/>
 <element name="U$3" library="output" package="GPIN42" value="" x="16.129" y="19.685" smashed="yes"/>
 <element name="U$16" library="output" package="GPOUT44" value="" x="35.687" y="19.812" smashed="yes"/>
 <element name="U$17" library="output" package="045" value="" x="28.067" y="17.78" smashed="yes"/>
@@ -6958,8 +6958,8 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="5.08" y="3.81" extent="1-16" drill="0.381"/>
 <via x="5.08" y="1.27" extent="1-16" drill="0.381"/>
 <via x="46.99" y="52.07" extent="1-16" drill="0.381"/>
-<via x="46.99" y="48.26" extent="1-16" drill="0.381"/>
-<via x="41.91" y="48.26" extent="1-16" drill="0.381"/>
+<via x="44.45" y="52.07" extent="1-16" drill="0.381"/>
+<via x="46.99" y="49.53" extent="1-16" drill="0.381"/>
 <via x="44.45" y="48.26" extent="1-16" drill="0.381"/>
 <via x="17.78" y="55.88" extent="1-16" drill="0.381"/>
 <via x="50.8" y="12.7" extent="1-16" drill="0.381"/>
@@ -7020,8 +7020,10 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="44.45" y="45.72" extent="1-16" drill="0.381"/>
 <via x="46.99" y="45.72" extent="1-16" drill="0.381"/>
 <via x="41.91" y="43.18" extent="1-16" drill="0.381"/>
+<via x="44.45" y="43.18" extent="1-16" drill="0.381"/>
 <via x="46.99" y="43.18" extent="1-16" drill="0.381"/>
 <via x="41.91" y="40.64" extent="1-16" drill="0.381"/>
+<via x="44.45" y="40.64" extent="1-16" drill="0.381"/>
 <via x="46.99" y="40.64" extent="1-16" drill="0.381"/>
 <via x="45.72" y="35.56" extent="1-16" drill="0.381"/>
 <via x="45.72" y="33.02" extent="1-16" drill="0.381"/>

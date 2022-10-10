@@ -6731,7 +6731,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="PROD_ID" value="CAP-00810" x="33.02" y="28.575" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="VALUE" x="32.258" y="28.575" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="U$2" library="output" package="POWER23" value="" x="23.876" y="47.752" smashed="yes"/>
+<element name="U$2" library="output" package="POWER23" value="" x="23.622" y="47.752" smashed="yes"/>
 <element name="U$4" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.2" value="" x="44.45" y="37.846" smashed="yes"/>
 <element name="U$6" library="output" package="RESET25" value="" x="41.91" y="28.702" smashed="yes"/>
 <element name="U$5" library="output" package="ON26" value="" x="17.691" y="53.743" smashed="yes"/>
@@ -7074,6 +7074,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="34.81" y1="34.81" x2="34.81" y2="32.38" width="0.2032" layer="1"/>
 <wire x1="36.31" y1="36.31" x2="34.81" y2="34.81" width="0.2032" layer="1"/>
 <via x="33.274" y="25.654" extent="1-16" drill="0.381"/>
+<via x="41.91" y="49.53" extent="1-16" drill="0.381"/>
 </signal>
 <signal name="N$7">
 <contactref element="D1" pad="A"/>

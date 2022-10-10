@@ -24621,6 +24621,8 @@ Diode with low voltage drop</description>
 <part name="R4" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="SUPPLY16" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="JP2" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39288/1" value="Power Select"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
+<part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24902,6 +24904,13 @@ to GND</text>
 <attribute name="NAME" x="75.438" y="158.496" size="1.778" layer="95" font="vector" rot="R180" align="center"/>
 <attribute name="VALUE" x="72.136" y="161.29" size="1.778" layer="96" font="vector" rot="R180" align="center"/>
 </instance>
+<instance part="R5" gate="G$1" x="226.06" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="224.536" y="86.36" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="227.584" y="86.36" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="226.06" y="93.98" smashed="yes">
+<attribute name="VALUE" x="226.06" y="96.774" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -24977,6 +24986,11 @@ to GND</text>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="SUPPLY16" gate="G$1" pin="3.3V"/>
 <wire x1="218.44" y1="93.98" x2="218.44" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
+<wire x1="226.06" y1="91.44" x2="226.06" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -25121,8 +25135,8 @@ to GND</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="D7"/>
 <wire x1="213.36" y1="78.74" x2="218.44" y2="78.74" width="0.1524" layer="91"/>
-<label x="223.52" y="78.74" size="1.27" layer="95" xref="yes"/>
-<wire x1="218.44" y1="78.74" x2="223.52" y2="78.74" width="0.1524" layer="91"/>
+<label x="228.6" y="78.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="218.44" y1="78.74" x2="228.6" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="78.74" x2="218.44" y2="81.28" width="0.1524" layer="91"/>
 <junction x="218.44" y="78.74"/>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -25136,8 +25150,8 @@ to GND</text>
 <net name="GPX" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="D8"/>
-<wire x1="213.36" y1="76.2" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
-<label x="223.52" y="76.2" size="1.27" layer="95" xref="yes"/>
+<wire x1="213.36" y1="76.2" x2="228.6" y2="76.2" width="0.1524" layer="91"/>
+<label x="228.6" y="76.2" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="GPX"/>
@@ -25150,8 +25164,8 @@ to GND</text>
 <net name="INT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="*D9"/>
-<wire x1="223.52" y1="73.66" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
-<label x="223.52" y="73.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="228.6" y1="73.66" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
+<label x="228.6" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="INT"/>
@@ -25164,8 +25178,12 @@ to GND</text>
 <net name="CS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="*D10"/>
-<wire x1="213.36" y1="71.12" x2="223.52" y2="71.12" width="0.1524" layer="91"/>
-<label x="223.52" y="71.12" size="1.27" layer="95" xref="yes"/>
+<wire x1="213.36" y1="71.12" x2="226.06" y2="71.12" width="0.1524" layer="91"/>
+<label x="228.6" y="71.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="71.12" x2="228.6" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="81.28" x2="226.06" y2="71.12" width="0.1524" layer="91"/>
+<junction x="226.06" y="71.12"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="2A"/>
@@ -25176,8 +25194,8 @@ to GND</text>
 <net name="PICO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="*D11"/>
-<wire x1="213.36" y1="68.58" x2="223.52" y2="68.58" width="0.1524" layer="91"/>
-<label x="223.52" y="68.58" size="1.27" layer="95" xref="yes"/>
+<wire x1="213.36" y1="68.58" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
+<label x="228.6" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="3A"/>
@@ -25188,8 +25206,8 @@ to GND</text>
 <net name="POCI" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="D12"/>
-<wire x1="213.36" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
-<label x="223.52" y="66.04" size="1.27" layer="95" xref="yes"/>
+<wire x1="213.36" y1="66.04" x2="228.6" y2="66.04" width="0.1524" layer="91"/>
+<label x="228.6" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="POCI"/>
@@ -25200,8 +25218,8 @@ to GND</text>
 <net name="SCK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="D13"/>
-<wire x1="213.36" y1="63.5" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
-<label x="223.52" y="63.5" size="1.27" layer="95" xref="yes"/>
+<wire x1="213.36" y1="63.5" x2="228.6" y2="63.5" width="0.1524" layer="91"/>
+<label x="228.6" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="1A"/>

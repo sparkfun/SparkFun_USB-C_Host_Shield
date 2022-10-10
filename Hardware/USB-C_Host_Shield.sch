@@ -23348,6 +23348,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
+<attribute name="PROD_ID" value="RES-17211"/>
 <attribute name="VALUE" value="56k"/>
 </technology>
 </technologies>
@@ -24475,8 +24476,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="S1" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-SMD-AYZ0202" value="Main Power"/>
-<part name="R9" library="SparkFun-Resistors" deviceset="56KOHM" device="" value="56k"/>
-<part name="R10" library="SparkFun-Resistors" deviceset="56KOHM" device="" value="56k"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="SUPPLY13" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
@@ -24501,6 +24500,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U5" library="SparkFun-IC-Microcontroller" deviceset="MAX3421" device=""/>
 <part name="S3" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-SMD-AYZ0202" value="Power Select"/>
 <part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
+<part name="R9" library="SparkFun-Resistors" deviceset="56KOHM" device="" value="56k"/>
+<part name="R10" library="SparkFun-Resistors" deviceset="56KOHM" device="" value="56k"/>
 </parts>
 <sheets>
 <sheet>
@@ -24714,14 +24715,6 @@ to GND</text>
 <attribute name="NAME" x="107.95" y="161.036" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="109.22" y="160.274" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="R9" gate="G$1" x="33.02" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="31.496" y="76.2" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="29.464" y="83.82" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="R10" gate="G$1" x="38.1" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="36.576" y="76.2" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="34.544" y="83.82" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
 <instance part="SUPPLY3" gate="VDD" x="20.32" y="91.44" smashed="yes">
 <attribute name="VALUE" x="20.32" y="94.234" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
@@ -24792,6 +24785,14 @@ to GND</text>
 </instance>
 <instance part="SUPPLY11" gate="VDD" x="98.298" y="160.274" smashed="yes">
 <attribute name="VALUE" x="98.298" y="163.068" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="R9" gate="G$1" x="33.02" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.496" y="75.946" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="29.718" y="81.788" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R10" gate="G$1" x="38.1" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.83" y="75.946" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="35.052" y="81.788" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -25317,16 +25318,16 @@ to GND</text>
 <segment>
 <pinref part="J1" gate="J1" pin="CC1"/>
 <wire x1="17.78" y1="58.42" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="58.42" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="CC2" class="0">
 <segment>
 <pinref part="J1" gate="J1" pin="CC2"/>
 <wire x1="17.78" y1="55.88" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="55.88" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -25447,14 +25448,14 @@ to GND</text>
 </net>
 <net name="VDD" class="0">
 <segment>
-<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="83.82" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="VDD" pin="VDD"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="83.82" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="VDD" pin="VDD"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="VDD" pin="VDD"/>
