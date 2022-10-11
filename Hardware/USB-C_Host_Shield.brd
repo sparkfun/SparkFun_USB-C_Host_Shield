@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
@@ -40,8 +40,8 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -195,12 +195,6 @@
 <wire x1="0" y1="53.34" x2="0" y2="0" width="0.2032" layer="20"/>
 <wire x1="0" y1="0" x2="2.54" y2="-2.54" width="0.2032" layer="20"/>
 <text x="3.81" y="5.08" size="1.778" layer="16" font="vector" ratio="15" rot="MR270">V01</text>
-<dimension x1="15.24" y1="59.69" x2="15.24" y2="0" x3="59.69" y3="29.845" textsize="1.778" textratio="15" layer="48" unit="inch"/>
-<dimension x1="2.54" y1="0" x2="3.81" y2="57.15" x3="-5.08" y3="28.575" textsize="1.778" textratio="15" layer="48" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="2.54" x2="53.34" y2="50.8" x3="26.67" y3="63.5" textsize="1.778" textratio="15" layer="48" dtype="horizontal" unit="inch"/>
-<dimension x1="0" y1="2.54" x2="7.62" y2="2.54" x3="3.81" y3="-5.08" textsize="1.778" textratio="15" layer="48" dtype="horizontal" unit="inch"/>
-<dimension x1="45.72" y1="2.54" x2="53.34" y2="3.81" x3="49.53" y3="-13.97" textsize="1.778" textratio="15" layer="48" dtype="horizontal" unit="inch"/>
-<dimension x1="25.4" y1="2.54" x2="27.94" y2="2.54" x3="26.67" y3="-8.89" textsize="1.778" textratio="15" layer="48" dtype="horizontal" unit="inch"/>
 <text x="27.94" y="-35.56" size="1.778" layer="51" font="vector" ratio="10">M. Chodikov</text>
 <wire x1="6.35" y1="20.32" x2="6.35" y2="19.685" width="0.254" layer="21"/>
 <wire x1="6.35" y1="19.685" x2="6.35" y2="19.05" width="0.254" layer="21"/>
@@ -212,8 +206,33 @@
 <wire x1="26.67" y1="19.685" x2="31.369" y2="19.685" width="0.254" layer="21"/>
 <wire x1="39.497" y1="19.685" x2="45.72" y2="19.685" width="0.254" layer="21"/>
 <text x="27.94" y="-33.02" size="1.778" layer="51" font="vector" ratio="10">A. Weiss</text>
-<dimension x1="0" y1="53.34" x2="53.34" y2="53.34" x3="26.67" y3="60.96" textsize="1.778" textratio="15" layer="47" unit="inch"/>
-<dimension x1="48.26" y1="57.15" x2="49.53" y2="-2.54" x3="-5.08" y3="27.305" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="53.34" x2="53.34" y2="53.34" x3="26.67" y3="80.01" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="15.24" y1="49.911" x2="0" y2="53.34" x3="7.62" y3="68.58" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="35.433" y1="50.8" x2="0" y2="53.34" x3="17.7165" y3="73.66" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="2.54" y1="52.07" x2="0" y2="53.34" x3="1.27" y3="57.15" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="50.8" y1="52.07" x2="53.34" y2="54.61" x3="52.07" y3="73.66" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="12.7" y1="54.61" x2="0" y2="54.61" x3="6.35" y3="62.23" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="15.24" y1="57.15" x2="48.26" y2="57.15" x3="31.75" y3="68.58" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="41.91" y1="24.13" x2="53.34" y2="0" x3="47.625" y3="-13.97" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="48.26" y1="57.15" x2="50.8" y2="-2.54" x3="81.28" y3="27.305" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="1.27" y1="54.61" x2="2.54" y2="-2.54" x3="-12.7" y3="26.035" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="2.54" y1="7.62" x2="2.54" y2="-2.54" x3="-6.35" y3="2.54" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="2.54" y1="7.62" x2="2.54" y2="30.48" x3="-6.35" y3="19.05" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="2.54" y1="30.48" x2="2.54" y2="34.29" x3="-2.54" y3="32.385" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="2.54" y1="34.29" x2="2.54" y2="52.07" x3="-6.35" y3="43.18" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="53.34" x2="1.27" y2="54.61" x3="-10.16" y3="53.975" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="45.72" y1="0" x2="50.8" y2="-2.54" x3="57.15" y3="-1.27" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="2.54" y1="7.62" x2="2.54" y2="10.16" x3="-2.54" y3="8.89" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="50.8" y1="16.51" x2="50.8" y2="-2.54" x3="74.93" y3="6.985" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="50.8" y1="16.51" x2="50.8" y2="34.29" x3="74.93" y3="25.4" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="50.8" y1="34.29" x2="50.8" y2="39.37" x3="57.15" y3="36.83" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="50.8" y1="39.37" x2="50.8" y2="52.07" x3="62.23" y3="45.72" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="41.91" y1="24.13" x2="52.07" y2="-2.54" x3="67.31" y3="10.795" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="45.72" y1="15.24" x2="45.72" y2="0" x3="60.96" y3="7.62" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="45.72" y1="0" x2="53.34" y2="0" x3="49.53" y3="-6.35" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="7.62" y1="0" x2="0" y2="0" x3="3.81" y3="-6.35" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="-2.54" x2="53.34" y2="0" x3="26.67" y3="-20.32" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="25.4" y1="0" x2="27.94" y2="0" x3="26.67" y3="-6.35" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
