@@ -1,0 +1,134 @@
+
+site_name: SparkFun USB-C Host Shield Hookup Guide
+site_description: A hookup guide for the USB-C Host Shield
+site_url: https://sparkfun.github.io/SparkFun_USB-C_Host_Shield
+site_author: SparkFun Electronics
+
+edit_uri: edit/main/docs/
+
+repo_url: https://github.com/sparkfun/SparkFun_USB-C_Host_Shield
+repo_name: sparkfun/SparkFun_USB-C_Host_Shield
+
+copyright: Copyright 2022 SparkFun Electronics (6333 Dry Creek Parkway, Niwot, Colorado 80503)
+
+theme:
+  name: material
+  logo: img/sfe_logo_sm.png
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: grey
+      accent: red
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to dark mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: grey
+      accent: red
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to system preference
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: grey
+      accent: red
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  features:
+    - content.code.annotate
+    - navigation.tracking
+    - navigation.tabs.sticky
+    - navigation.tabs    
+
+  icon:
+    repo: fontawesome/brands/github
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+  custom_dir: docs/overrides
+
+plugins:
+  - search
+  - monorepo
+  - with-pdf:
+      cover_logo: img/sfe_logo_sm.png
+      exclude_pages: [ "print_pdf" ]
+      output_path: board_files/product_manual.pdf
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.tilde
+  - tables
+  - admonition
+  - md_in_html
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/sparkfun
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/sparkfun
+    - icon: fontawesome/brands/github
+      link: https://www.github.com/sparkfun
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/SparkFun
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/sparkfun
+    - icon: fontawesome/regular/file-pdf
+      link: ../board_files/product_manual.pdf
+
+
+nav:
+  - Product Description: index.md
+  - Product Manual:
+    - Getting Started: getting_started.md
+    - Hardware Overview: hardware_overview.md
+    - Hardware Assembly: hardware_assembly.md
+    - Software Overview: software_overview.md
+    - Download Product Manual: print_pdf.md
+#      - Examples:
+  - Product Resources:
+    - Board Files: board_files.md
+    - Hardware Datasheets: component_documentation.md
+    - Maxim Integrated's Resources: resources-manufacturer.md
+    - SparkFun's Resources: resources-sparkfun.md
+    - Troubleshooting Tips: troubleshooting_tips.md
+  - Issues/Pull Requests:
+    - Issues: file_issue.md
+    - Contribute: contribute.md
