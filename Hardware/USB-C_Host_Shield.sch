@@ -24502,7 +24502,7 @@ Shield form compatible with the Arduino Uno R3.
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
+<part name="SHLD" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="S1" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-SMD-AYZ0202" value="Main Power"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
@@ -24537,7 +24537,7 @@ Shield form compatible with the Arduino Uno R3.
 <sheet>
 <plain>
 <text x="168.91" y="7.112" size="2.54" layer="94" font="vector">M. Chodikov</text>
-<text x="239.268" y="6.35" size="2.54" layer="94" font="vector">v01</text>
+<text x="239.268" y="6.35" size="2.54" layer="94" font="vector">v10</text>
 <text x="93.98" y="177.8" size="2.54" layer="94" font="vector">Power Select &amp; Regulator</text>
 <text x="182.88" y="106.68" size="2.54" layer="94" font="vector">Arduino Shield</text>
 <text x="66.04" y="104.14" size="2.54" layer="94" font="vector">USB Peripheral</text>
@@ -24553,6 +24553,8 @@ Shield form compatible with the Arduino Uno R3.
 not be connected
 to GND</text>
 <text x="166.37" y="11.43" size="2.54" layer="94" font="vector">A. Weiss</text>
+<text x="81.28" y="147.32" size="1.27" layer="97" font="vector">Power Select:
+VIN or 5V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -24572,7 +24574,7 @@ to GND</text>
 <attribute name="NAME" x="2.54" y="68.834" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="U2" gate="G$1" x="43.18" y="152.4" smashed="yes">
-<attribute name="NAME" x="45.72" y="144.78" size="1.778" layer="95"/>
+<attribute name="NAME" x="44.196" y="145.034" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="38.354" y="155.448" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="124.46" y="104.14" smashed="yes">
@@ -24734,8 +24736,8 @@ to GND</text>
 <instance part="GND16" gate="1" x="25.4" y="30.48" smashed="yes">
 <attribute name="VALUE" x="25.4" y="30.226" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="JP1" gate="G$1" x="25.4" y="40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="22.352" y="40.64" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
+<instance part="SHLD" gate="G$1" x="25.4" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.114" y="39.878" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="28.448" y="40.64" size="1.778" layer="96" font="vector" rot="R90" align="center" display="off"/>
 </instance>
 <instance part="S1" gate="1" x="104.14" y="154.94" smashed="yes">
@@ -24966,7 +24968,7 @@ to GND</text>
 <segment>
 <wire x1="25.4" y1="35.56" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="SHLD" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="-"/>
@@ -25463,7 +25465,7 @@ to GND</text>
 <pinref part="J1" gate="J1" pin="SHLD"/>
 <wire x1="17.78" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="53.34" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="SHLD" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VDD" class="0">
