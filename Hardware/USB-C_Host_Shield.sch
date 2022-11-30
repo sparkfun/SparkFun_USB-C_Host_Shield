@@ -24215,7 +24215,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="177.8" y1="114.3" x2="248.92" y2="114.3" width="0.2032" layer="97" style="shortdash"/>
 <text x="198.12" y="177.8" size="2.54" layer="94" font="vector">Hex Inverter</text>
 <text x="187.96" y="175.26" size="1.27" layer="97" font="vector">Translate 5V Arduino signals to 3.3V for the MAX3421</text>
-<text x="22.86" y="162.56" size="1.27" layer="97" font="vector">Vin = 6.5V-16V</text>
+<text x="22.86" y="162.56" size="1.27" layer="97" font="vector">Vin = 6.5V-10V</text>
 <text x="7.62" y="30.48" size="1.27" layer="97" font="vector">Cut JP1 for Shield to
 not be connected
 to GND</text>
