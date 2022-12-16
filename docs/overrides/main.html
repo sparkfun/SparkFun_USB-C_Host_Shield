@@ -2,8 +2,9 @@
 
 {% block content %}
 
-{% if "board_files/product_manual.pdf" %}
-    <a href="../board_files/product_manual.pdf" title="Download PDF" class="md-content__button md-icon">
+<!-- Adds PDF Icon to download hookup guide -->
+{% if "board_files/usb-c_host_shield-hookup_guide.pdf" %}
+    <a href="/SparkFun_USB-C_Host_Shield/assets/board_files/usb-c_host_shield-hookup_guide.pdf" title="Download PDF" class="md-content__button md-icon">
         {% include ".icons/fontawesome/regular/file-pdf.svg" %}
     </a>
 {% endif %}

@@ -1,0 +1,229 @@
+/* Sets page to use screens full width (can also use initial; instead of 100%) */
+.md-grid {
+  max-width: 100%;
+}
+
+
+/* ================================================================================== */
+/* Product Description Page                                                           */
+/* ================================================================================== */
+/* Sets table width for product description page */
+.md-typeset table.desc {
+  width: 100%;
+  display: table;
+}
+.md-typeset table.desc label{
+  font-size: .85rem;
+}
+
+/* Sets grid width for product description page */
+.grid.cards.desc {
+  grid-template-columns: 35% 65%;
+}
+
+/* Sets video size for product description page */
+.video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border: 0;
+}
+
+.video0 {
+  position: relative;
+  width: 100%;
+}
+.video0 iframe {
+  position: relative;
+  top: 0;
+  width: 90vh;
+  height: 23.5vw;
+  min-width: 300px;
+  min-height: 169px;
+  border: 0;
+  overflow: hidden;
+}
+
+.video1 {
+  position: relative;
+  width: 30%;
+  min-width: 300px;
+  padding-bottom: 16.875%;
+  min-height: 169px;
+}
+.video1 iframe {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border: 0;
+}
+
+.video2 {
+  position: relative;
+  width: 100%;
+}
+.video2 iframe {
+  position: relative;
+  top: 0;
+  width: 90vh;
+  min-width: 200px;
+  /* height: 47vw * percentage */
+  height: 16.45vw;
+  min-height: 113px;
+  border: 0;
+  overflow: hidden;
+}
+
+
+/* Add compatibility for mobile devices */
+@media (max-width: 750px) {
+  .grid.cards.desc {
+    grid-template-columns: 100%;
+  }
+  .video2 iframe {
+    /* height: 47vw * percentage */
+    height: 47vw;
+  }
+}
+
+
+/* ================================================================================== */
+/* General Customizations                                                             */
+/* ================================================================================== */
+
+/* Sets images size in grid cards */
+.md-typeset .grid ul figure img {
+  width: 100%;
+  max-width: 200px;
+}
+
+/* Sets the maximum height size of the code blocks */
+.md-typeset pre > code {
+  max-height: var(--md-codeblock-height, 800px);
+}
+
+/* Hides elemments with <class="pdf"> on webpage (used for the generated PDF) */
+* + .pdf {
+  /* width: 100%;
+  display: table; */
+  display: none;
+}
+
+* figure.pdf {
+  /* width: 100%;
+  display: contents; */
+  display: none;
+}
+
+/* ================================================================================== */
+/* Parameters for PDF Rendering                                                       */
+/* ================================================================================== */
+@media print {
+  /* Shows elements with <class="pdf"> on webpage (used for the generated PDF) */
+  * + .pdf {
+    display: contents;
+  }
+  * figure.pdf {
+    display: block;
+  }
+
+
+  /* Sets table to 100% of page width */
+  .md-typeset table:not([class]) {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+  .md-typeset table.pdf {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+  /* Sets images size in tables */
+  .md-typeset table:not([class]) td img {
+    width: 100%;
+    max-height: 150px;
+  }
+
+  /* Hides grid cards on pdf */
+  /* .md-typeset .grid {
+	  display: none;
+  } */
+
+  /* Sets grid card width (not working)
+  Works for File > Print function, but not valid for PDF generator due to issue with Weazy
+  * Refer to https://github.com/Kozea/WeasyPrint/issues/543
+  .md-typeset .grid {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+  } */
+  /* Shrinks card width to 25% and font to 8px (kind of works for PDF generator, but doesn't create columns)
+  .md-typeset :is(.cards) {
+	width: 25%;
+	font-size: 8px;
+  } */
+  
+  
+  /* Sets maximum image size */
+  .md-typeset img {
+    max-width:  200px;
+    max-height: 200px;
+  }
+  /* Fixes positioning of admonition icon */
+  .md-typeset :is(.admonition-title,summary):before {
+    top: 0.6rem;
+    left: 0.6rem; 
+  }
+  /* Fixes appearance of admonition icon */
+  .md-typeset :is(.admonition,details)>:last-child {
+	  background-color: transparent; 
+  }
+  /* Fixes margin spacing for lists */
+  .md-typeset ol,ul {
+	  margin-left: 1.5rem;
+  }
+
+  /* Adjusts page break for PDF generator */
+  article h2,h3,h4,h5,h6,ol,ul {
+	  page-break-before: avoid;
+  }
+  article div.admonition {
+	  page-break-before: avoid;
+  }
+  article table,ol,ul {
+    page-break-inside: auto !important;
+  }
+
+  /* Displays first tab (workaround to rendering issue) */
+  * + .tabbed-content {
+    display: contents;
+  }
+  * + .tabbed-content .tabbed-block {
+    display: contents;
+    page-break-after: always;
+  }
+
+  /* Prevents page break when tabs are embedded in an admonition*/
+  article details.note {
+    display: inline-block;
+    overflow: hidden;
+    /* Hardcode max height to match code block size, when tabbed (need to find better alternative) */
+    max-height: 138mm;
+  }
+
+  /* Limits size of code blocks in admonitions (workaround to rendering issue) */
+  .md-typeset :is(pre, code) {
+    display: inline-flexbox;
+    max-height: 120mm;
+    overflow: hidden;
+  }
+}
