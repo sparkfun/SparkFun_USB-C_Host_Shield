@@ -1,42 +1,75 @@
 ## Arduino IDE
 !!! note
-    For first-time users, who have never programmed before and are looking to use the Arduino IDE, we recommend beginning with the <a href="https://www.sparkfun.com/products/15631">SparkFun Inventor's Kit (SIK)</a>, which includes a simple board like the <a href="https://www.sparkfun.com/products/11224">Arduino Uno</a> or <a href="https://www.sparkfun.com/products/15123">SparkFun RedBoard</a> and is designed to help users get started programming with the Arduino IDE.
+	For first-time users, who have never programmed before and are looking to use the Arduino IDE, we recommend beginning with the <a href="https://www.sparkfun.com/products/15631">SparkFun Inventor's Kit (SIK)</a>, which includes a simple board like the <a href="https://www.sparkfun.com/products/11224">Arduino Uno</a> or <a href="https://www.sparkfun.com/products/15123">SparkFun RedBoard</a> and is designed to help users get started programming with the Arduino IDE.
 
 Most users may already be familiar with the Arduino IDE and its use. However, for those of you who have never heard the name *Arduino* before, feel free to check out the [Arduino website](https://www.arduino.cc/en/Guide/HomePage). To get started with using the Arduino IDE, check out our tutorials below:
 
 
-<table style="border-style:none">
-    <tr>
-        <td align="center">
-            <a class="thumb" href="https://learn.sparkfun.com/tutorials/50">
-                <center><img src="https://cdn.sparkfun.com/c/178-100/assets/3/b/6/e/b/512e66bece395f492b000000.jpg" alt="What is an Arduino?" height="140">
-                </center>
-                <h3 class="title">What is an Arduino?</h3>
-            </a>
-        </td>
-        <td align="center">
-            <a class="thumb" href="https://learn.sparkfun.com/tutorials/61">
-                <center><img src="https://cdn.sparkfun.com/c/178-100/assets/learn_tutorials/6/1/arduinoThumb.jpg" alt="Installing Arduino IDE" height="140">
-                </center>
-                <h3 class="title">Installing Arduino IDE</h3>
-            </a>
-        </td>
-        <td align="center">
-            <a class="thumb" href="https://learn.sparkfun.com/tutorials/15">
-                <center><img src="https://cdn.sparkfun.com/c/178-100/assets/b/e/4/b/2/50f04b99ce395fd95e000001.jpg" alt="Installing an Arduino Library" height="140">
-                </center>
-                <h3 class="title">Installing an Arduino Library</h3>
-            </a>
-        </td>
-        <td align="center">
-            <a class="thumb" href="https://learn.sparkfun.com/tutorials/1265">
-                <center><img src="https://cdn.sparkfun.com/c/178-100/assets/learn_tutorials/1/2/6/5/sparkfun_boards.PNG" alt="Installing Board Definitions in the Arduino IDE" height="140">
-                </center>
-                <h3 class="title">Installing Board Definitions in the Arduino IDE</h3>
-            </a>
-        </td>
-    </tr>
+<table class="pdf" style="border-style:none" align="center">
+	<tr>
+		<td align="center">
+			<a class="thumb" href="https://learn.sparkfun.com/tutorials/50">
+				<img src="https://cdn.sparkfun.com/c/264-148/assets/3/b/6/e/b/512e66bece395f492b000000.jpg" alt="What is an Arduino?">
+				<h3 class="title">What is an Arduino?</h3>
+			</a>
+		</td>
+		<td align="center">
+			<a class="thumb" href="https://learn.sparkfun.com/tutorials/61">
+				<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/1/arduinoThumb.jpg" alt="Installing Arduino IDE">
+				<h3 class="title">Installing Arduino IDE</h3>
+			</a>
+		</td>
+		<td align="center">
+			<a class="thumb" href="https://learn.sparkfun.com/tutorials/15">
+				<img src="https://cdn.sparkfun.com/c/264-148/assets/b/e/4/b/2/50f04b99ce395fd95e000001.jpg" alt="Installing an Arduino Library">
+				<h3 class="title">Installing an Arduino Library</h3>
+			</a>
+		</td>
+		<td align="center">
+			<a class="thumb" href="https://learn.sparkfun.com/tutorials/1265">
+				<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/2/6/5/sparkfun_boards.PNG" alt="Installing Board Definitions in the Arduino IDE">
+				<h3 class="title">Installing Board Definitions in the Arduino IDE</h3>
+			</a>
+		</td>
+	</tr>
 </table>
+
+
+<div class="grid cards" markdown align="center">
+
+-   <a href="https://learn.sparkfun.com/tutorials/50">**What is an Arduino?**
+
+	---
+
+	<figure markdown>
+	![What is an Arduino?](https://cdn.sparkfun.com/c/264-148/assets/3/b/6/e/b/512e66bece395f492b000000.jpg)
+	</figure></a>
+
+-   <a href="https://learn.sparkfun.com/tutorials/61">**Installing the Arduino IDE**
+
+	---
+	
+	<figure markdown>
+	![Installing the Arduino IDE](https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/1/arduinoThumb.jpg)
+	</figure></a>
+
+-   <a href="https://learn.sparkfun.com/tutorials/15">**Installing an Arduino Library**
+
+	---
+	
+	<figure markdown>
+	![Installing an Arduino Library](https://cdn.sparkfun.com/c/264-148/assets/b/e/4/b/2/50f04b99ce395fd95e000001.jpg)
+	</figure></a>
+
+-   <a href="https://learn.sparkfun.com/tutorials/1265">**Installing Board Definitions in the Arduino IDE**
+
+	---
+	
+	<figure markdown>
+	![Installing Board Definitions in the Arduino IDE](https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/2/6/5/sparkfun_boards.PNG)
+	</figure></a>
+</div>
+
 
 ### USB Host Library
 The [USB Host Library Rev. 2.0](https://github.com/felis/USB_Host_Shield_2.0) can be installed from the library manager in the Arduino IDE.
@@ -55,15 +88,15 @@ For a detailed and up-to-date list of boards supported by this library, check ou
 * All official Arduino AVR boards (Uno, Duemilanove, Mega, Mega 2560, Mega ADK, Leonardo etc.)
 * Arduino Due
 * Teensy (Teensy++ 1.0, Teensy 2.0, Teensy++ 2.0, Teensy 3.x, Teensy LC and Teensy 4.x)
-    * For the Teensy 3.x, download this SPI library as well: <https://github.com/xxxajk/spi4teensy3> and add ```#include <spi4teensy3.h>``` to the `*.ino` sketch file.
+	* For the Teensy 3.x, download this SPI library as well: <https://github.com/xxxajk/spi4teensy3> and add ```#include <spi4teensy3.h>``` to the `*.ino` sketch file.
 * STM32F4
-    * Take a look at the following example code: <https://github.com/Lauszus/Nucleo_F446RE_USBHost>.
+	* Take a look at the following example code: <https://github.com/Lauszus/Nucleo_F446RE_USBHost>.
 * ESP8266 is supported using the [ESP8266 Arduino core](https://github.com/esp8266/Arduino)
-    * Uses pins `15` and `5` for `CS` and `INT`, respectively.
-      * `GPIO16` is **NOT** usable.
-      * `GPIO6` to `11` are also **NOT** usable.
+	* Uses pins `15` and `5` for `CS` and `INT`, respectively.
+	  * `GPIO16` is **NOT** usable.
+	  * `GPIO6` to `11` are also **NOT** usable.
 * ESP32 is supported using the [arduino-esp32](https://github.com/espressif/arduino-esp32/)
-    * GPIO5 : `CS`, GPIO17 : `INT`, GPIO18 : `SCK`, GPIO19 : `POCI`, GPIO23 : `PICO`
+	* GPIO5 : `CS`, GPIO17 : `INT`, GPIO18 : `SCK`, GPIO19 : `POCI`, GPIO23 : `PICO`
 
 
 #### I/O Pin Modifications
@@ -85,7 +118,7 @@ typedef MAX3421e<P7, P2> MAX3421E;
 
 ## RedBoard Plus
 !!! note
-    The following instructions are specific to the RedBoard Plus. 
+	The following instructions are specific to the RedBoard Plus. 
 
 <center>
 [![RedBoard Plus Hookup Guide](https://cdn.sparkfun.com/c/500-282/assets/learn_tutorials/1/7/5/8/18158-SparkFun_RedBoard_Plus-01.jpg)](https://learn.sparkfun.com/tutorials/1758)<br>

@@ -3,12 +3,12 @@
 Spot something wrong? Please let us know. <a href="https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/issues" alt="Issues"><img src="https://img.shields.io/github/issues/sparkfun/SparkFun_USB-C_Host_Shield.svg" /></a>
 
 !!! attention
-    This is not where customers should seek assistance on a product. If you require technical assistance or have questions about a product that is not working as expected, please head over to the [SparkFun Technical Assistance](https://www.sparkfun.com/technical_assistance) page for some initial troubleshooting.
-    <center>
-    [SparkFun Technical Assistance Page](https://www.sparkfun.com/technical_assistance){ .md-button .md-button--primary }
-    </center>
-    
-    If you can't find what you need there, you'll need a [Forum Account](https://forum.sparkfun.com/ucp.php?mode=register) to search product forums and post questions.
+	This is not where customers should seek assistance on a product. If you require technical assistance or have questions about a product that is not working as expected, please head over to the [SparkFun Technical Assistance](https://www.sparkfun.com/technical_assistance) page for some initial troubleshooting.
+	<center>
+	[SparkFun Technical Assistance Page](https://www.sparkfun.com/technical_assistance){ .md-button .md-button--primary }
+	</center>
+	
+	If you can't find what you need there, you'll need a [Forum Account](https://forum.sparkfun.com/ucp.php?mode=register) to search product forums and post questions.
 
 ## Discrepancies in the Documentation
 
@@ -23,8 +23,8 @@ If a section of the documentation is incorrect, please [open an issue](https://g
 1. With a GitHub account, fork this repo
 2. Add your correction(s) or improvement(s) to the markdown file(s)
 3. File a pull request with your changes, and enjoy making the ~~words~~ ~~worlds~~ world a better place.
-    * Once received, the documentation specialist will automatically be notified.
-    * We will review your suggested improvement(s) to make sure they are correct and fit within our documentation standards.
+	* Once received, the documentation specialist will automatically be notified.
+	* We will review your suggested improvement(s) to make sure they are correct and fit within our documentation standards.
 
 ## Problems in the Hardware Design
 
@@ -43,5 +43,5 @@ If part of the design is confusing, please [open an issue](https://github.com/sp
 1. With a GitHub account, Fork this repo
 2. Add your design improvement(s)
 3. File a pull request with your changes, and enjoy making the ~~words~~ ~~worlds~~ world a better place.
-    * Once received, the engineer in charge of the original design will automatically be notified.
-    * We will review your suggested improvement(s), if they are within our board design standards and meet our product design requirements, we will flag these changes for our next board revision. *(Please note, that even if your suggestion is accepted, these changes may not be immediate. We may have to cycle through our current product inventory first.)*
+	* Once received, the engineer in charge of the original design will automatically be notified.
+	* We will review your suggested improvement(s), if they are within our board design standards and meet our product design requirements, we will flag these changes for our next board revision. *(Please note, that even if your suggestion is accepted, these changes may not be immediate. We may have to cycle through our current product inventory first.)*
