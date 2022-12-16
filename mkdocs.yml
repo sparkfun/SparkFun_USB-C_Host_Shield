@@ -13,7 +13,7 @@ copyright: Copyright 2022 SparkFun Electronics (6333 Dry Creek Parkway, Niwot, C
 # Configuration for webpage theme
 theme:
   name: material
-  logo: img/sfe_logo_sm.png
+  logo: assets/img/sfe_logo_sm.png
   font:
     text: Roboto
     code: Roboto Mono
@@ -141,19 +141,25 @@ extra_css:
 # Configures webpage navigation
 nav:
   - Product Description: index.md
-  - Product Manual:
-    - Getting Started: getting_started.md
-    - Hardware Overview: hardware_overview.md
-    - Hardware Assembly: hardware_assembly.md
-    - Software Overview: software_overview.md
-    - Download Product Manual: print_pdf.md
-#      - Examples:
+  - Hookup Guide:
+    # - Introduction: index.md
+    - Getting Started: hookup_guide/getting_started.md
+    - Hardware Overview: hookup_guide/hardware_overview.md
+    - Hardware Assembly: hookup_guide/hardware_assembly.md
+    - Software Overview: hookup_guide/software_overview.md
+    - Troubleshooting Tips: hookup_guide/troubleshooting_tips.md
+    - Download Hookup Guide: hookup_guide/print_pdf.md
+  - Arduino Examples:
+    - Example 1: arduino_examples/example1.md
+    - Example 2: arduino_examples/example2.md
+    - Example 3: arduino_examples/example3.md
   - Product Resources:
-    - Board Files: board_files.md
-    - Hardware Datasheets: component_documentation.md
-    - Maxim Integrated's Resources: resources-manufacturer.md
-    - SparkFun's Resources: resources-sparkfun.md
-    - Troubleshooting Tips: troubleshooting_tips.md
+    - Board Files: resources/board_files.md
+    - Hardware Datasheets: resources/component_documentation.md
+    - Troubleshooting Tips: hookup_guide/troubleshooting_tips.md
+    - Maxim Integrated's Resources: resources/resources-manufacturer.md
+    - SparkFun's Resources: resources/resources-sparkfun.md
   - Issues/Pull Requests:
-    - Issues: file_issue.md
-    - Contribute: contribute.md
+    - Issues: github/file_issue.md
+    - Contribute: github/contribute.md
+  # - Print: print.md
