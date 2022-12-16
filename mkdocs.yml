@@ -77,10 +77,12 @@ theme:
 plugins:
   - search
   - monorepo
+  # For PDF rendering
   - with-pdf:
-      cover_logo: img/sfe_logo_sm.png
-      exclude_pages: [ "print_pdf" ]
-      output_path: board_files/product_manual.pdf
+      cover_subtitle: none
+      cover_logo: assets/img/sfe_logo_sm.png
+      exclude_pages: [ "hookup_guide/print_pdf", "file_issue", "contribute" ]
+      output_path: assets/board_files/usb-c_host_shield-hookup_guide.pdf
 
 
 # Included Markdown extensions
@@ -131,8 +133,10 @@ extra:
       link: https://www.facebook.com/SparkFun
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/sparkfun
-    - icon: fontawesome/regular/file-pdf
-      link: ../board_files/product_manual.pdf
+    # - icon: fontawesome/regular/file-pdf
+    #   link: ../board_files/usb-c_host_shield-hookup_guide.pdf
+
+
 # Configures styling for PDF rendering and webpage layout
 extra_css:
   - overrides/extra.css
