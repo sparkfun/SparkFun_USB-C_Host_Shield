@@ -28,12 +28,21 @@ Repository Contents
 -------------------
 
 * **[/docs](/docs/)** - Online documentation files
-    * [board_files](/docs/board_files/) - Files for the product design
-        * [Eagle design files](/docs/board_files/eagle_files.zip) (.zip)
-        * [Schematic](/docs/board_files/schematic.pdf) (.pdf)
-        * [Dimensions](/docs/board_files/dimensions.pdf) (.pdf)
-    * [component_documentation](/docs/component_documentation/) - Datasheets and manuals for hardware components
-    * [img/hookup_guide/](/docs/img/hookup_guide/) - Images for hookup guide documentation
+	* [overrides](/docs/overrides/) - Customization files for the GitHub pages product documentation
+	* [assets](/docs/assets/) - Folder containing all the file assets used for the product documentation
+		* [board_files](/docs/assets/board_files/) - Files for the product design
+			* [Eagle design files](/docs/assets/board_files/eagle_files.zip) (.zip)
+			* [Schematic](/docs/assets/board_files/schematic.pdf) (.pdf)
+			* [Dimensions](/docs/assets/board_files/dimensions.pdf) (.pdf)
+		* [component_documentation](/docs/assets/component_documentation/) - Datasheets and manuals for hardware components
+		* [img](/docs/assets/img/) - Images for the product documentation
+			* [hookup_guide](/docs/assets/img/hookup_guide/) - Images for the hookup guide documentation
+			* [arduino_examples](/docs/assets/img/arduino_examples/) - Images for the Arduino examples
+	* [index.md](/docs/index.md) - Product description page
+	* [hookup_guide](/docs/hookup_guide/) - Folder containing the files for the hookup guide pages
+	* [arduino_examples](/docs/arduino_examples/) - Folder containing the files for the Arduino example pages
+	* [resources](/docs/resources/) - Folder containing the files for listing the product resources
+	* [github](/docs/github/) - Files with instructions for filing GitHub issues/pull-requests
 * **[/Firmware](/Firmware/)** - Example sketches demonstrating extra peripherals
 * **[/Hardware](/Hardware/)** - Eagle design files (.brd, .sch)
 
