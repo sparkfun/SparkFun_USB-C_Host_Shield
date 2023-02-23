@@ -55,13 +55,18 @@ Documentation
 	* [Print *(Print to PDF)* from Single-Page View](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/hookup_guide/single_page)
 	* [Download PDF](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/assets/board_files/hookup_guide.pdf) *(Beta - Mostly works, but some attributes may be broken.)*
 
-Product Versions
+Product Variants
 ----------------
 * USB-C Host Shield (USB-C variant)
 	* [DEV-21247](https://www.sparkfun.com/products/21247)- v1.0, Initial Release
 * USB Host Shield
 	* [DEV-09947](https://www.sparkfun.com/products/retired/9947)- v2.0, Fixes `GPX` and `RESET` pin connections
 	* [DEV-09628](https://www.sparkfun.com/products/retired/9628)- v1.0, Initial Release
+
+Version History
+---------------
+* [v01](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/releases/tag/v10) - Initial Release
+
 
 License Information
 -------------------
