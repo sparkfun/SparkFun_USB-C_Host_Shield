@@ -1,4 +1,4 @@
-!!! note
+!!! tip
     Users unfamiliar with using Arduino shields should refer to the [Arduino Shields (v2)](https://learn.sparkfun.com/tutorials/arduino-shields-v2) tutorial first.
     <p align="center">
         <a href="https://learn.sparkfun.com/tutorials/1167">Arduino Shields v2<br>
@@ -7,20 +7,33 @@
                 
 
 ## Headers
-The pins for the USB Host Shield are broken out to 0.1"-spaced pins on the outer edges of the board. When selecting headers, be sure you are aware of the functionality you need. The [Arduino Stackable Header Kit - R3](https://www.sparkfun.com/products/11417) is a great option as it allows users to stack shields (*w/ Uno/R3 footprint*); with the pins still accessible through the female headers.
+The pins for the USB Host Shield are broken out to 0.1"-spaced pins on the outer edges of the board. When selecting headers, be sure you are aware of the functionality you need.
 
-<center>
-[![Soldering headers](./img/hookup_guide/assembly_headers.jpg){ width="400" }](./img/hookup_guide/assembly_headers.jpg)<br>
-*Soldering headers to the USB Host Shield. (Click to enlarge)*
-</center>
+<figure markdown>
+[![](../assets/img/hardware/assembly-headers.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/assembly-headers.jpg)
+<figcaption markdown>Soldering headers to the USB Host Shield.</figcaption>
+</figure>
 
-*If you have never soldered before or need a quick refresher, check out our [How to Solder: Through-Hole Soldering](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering) guide.*
+The [Arduino Stackable Header Kit - R3](https://www.sparkfun.com/products/11417) is a great option as it allows users to stack shields (*w/ Uno/R3 footprint*); with the pins still accessible through the female headers.
+
+<figure markdown>
+[![](../assets/img/hardware/assembly-stack_shield.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/assembly-stack_shield.jpg)
+<figcaption markdown>Stacking the USB Host Shield on the [SparkFun RedBoard Plus](https://www.sparkfun.com/products/18158).</figcaption>
+</figure>
+
+!!! tip
+	If you have never soldered before or need a quick refresher, check out our [How to Solder: Through-Hole Soldering](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering) guide.
+
+	<p align="center">
+		<a href="https://learn.sparkfun.com/tutorials/5">How to Solder: Through-Hole Soldering<br>
+		<img alt="tutorial thumbnail" src="https://cdn.sparkfun.com/c/264-148/assets/e/3/9/9/4/51d9fbe1ce395f7a2a000000.jpg"></a>
+	</p>
 
 
 ## USB Device
-The USB port is utilized for the host/peripheral interface. Users only need to connect a USB device or connect their USB Host Shield to a computer, using a USB-C cable.
+The USB port is utilized for the host/peripheral interface. Users only need to connect a USB device to the USB host shield or connect the shield to a computer with a USB-C cable.
 
-<center>
-[![USB Host Shield USB connection](./img/hookup_guide/assembly_usb.jpg){ width="400" }](./img/hookup_guide/assembly_usb.jpg)<br>
-*The USB Host Shield operates as a host/peripheral with a USB-C cable connected. (Click to enlarge)*
-</center>
+<figure markdown>
+[![](../assets/img/hardware/assembly-usb_device.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/assembly-usb_device.jpg)
+<figcaption markdown>The USB Host Shield with a [USB-C adapter](https://www.sparkfun.com/products/21870) and [flash drive](https://www.sparkfun.com/products/14658) attached. The shield sits on top of a RedBoard Plus connected to a computer.</figcaption>
+</figure>

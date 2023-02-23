@@ -13,7 +13,7 @@ SparkFun USB-C Host Shield
 </p>
 
 
-[![SparkFun USB-C Host Shield](https://cdn.sparkfun.com/assets/parts/1/9/9/6/8/21247Diagonal.jpg)](https://www.sparkfun.com/products/21247)
+[![SparkFun USB-C Host Shield](https://cdn.sparkfun.com/assets/parts/2/1/0/0/8/SparkFun_USB-C_Host_Shield-_01.jpg)](https://www.sparkfun.com/products/21247)
 
 *[SparkFun USB-C Host Shield (DEV-21247)](https://www.sparkfun.com/products/21247)*
 
@@ -36,12 +36,12 @@ Repository Contents
 			* [Dimensions](/docs/assets/board_files/dimensions.pdf) (.pdf)
 		* [component_documentation](/docs/assets/component_documentation/) - Datasheets and manuals for hardware components
 		* [img](/docs/assets/img/) - Images for the product documentation
-			* [hookup_guide](/docs/assets/img/hookup_guide/) - Images for the hookup guide documentation
-			* [arduino_examples](/docs/assets/img/arduino_examples/) - Images for the Arduino examples
+			* [hardware](/docs/assets/img/hardware/) - Images for the hardware related pages (i.e. hardware overview and assembly)
+			* [software](/docs/assets/img/examples) - Images for the software related pages (i.e. software overview and examples)
 	* [index.md](/docs/index.md) - Product description page
-	* [hookup_guide](/docs/hookup_guide/) - Folder containing the files for the hookup guide pages
-	* [arduino_examples](/docs/arduino_examples/) - Folder containing the files for the Arduino example pages
-	* [resources](/docs/resources/) - Folder containing the files for listing the product resources
+	* [hookup_guide](/docs/hookup_guide/) - Folder containing the files for the `Hookup Guide` pages
+	* [arduino_ide](/docs/arduino_ide) - Folder containing the files for the software setup/installation and example pages
+	* [resources.md](/docs/resources.md) - File listing the product resources
 	* [github](/docs/github/) - Files with instructions for filing GitHub issues/pull-requests
 * **[/Firmware](/Firmware/)** - Example sketches demonstrating extra peripherals
 * **[/Hardware](/Hardware/)** - Eagle design files (.brd, .sch)
@@ -49,6 +49,11 @@ Repository Contents
 Documentation
 --------------
 * **[Hookup Guide (mkdocs)](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/)** - Hookup guide for the USB-C Host Shield hosted by GitHub pages.
+
+	*Need to download or print our hookup guide?*
+
+	* [Print *(Print to PDF)* from Single-Page View](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/hookup_guide/single_page)
+	* [Download PDF](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/assets/board_files/hookup_guide.pdf) *(Beta - Mostly works, but some attributes may be broken.)*
 
 Product Versions
 ----------------
@@ -65,7 +70,7 @@ This product is _**open source**_!
 
 Please review the LICENSE.md file for license information. 
 
-If you have any questions or concerns on licensing, please contact technical support on our [SparkFun forums](https://forum.sparkfun.com/viewforum.php?f=152).
+If you have any questions or concerns about licensing, please contact technical support on our [SparkFun forums](https://forum.sparkfun.com/viewforum.php?f=152).
 
 Distributed as-is; no warranty is given.
 

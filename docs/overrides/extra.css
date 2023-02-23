@@ -1,13 +1,199 @@
+/* ================================================================================== */
+/* General Customizations                                                             */
+/* ================================================================================== */
+
 /* Sets page to use screens full width (can also use initial; instead of 100%) */
 .md-grid {
   max-width: 100%;
 }
 
+/* Center images in figure elements */
+.md-typeset figure {
+  text-align: -webkit-center;
+}
+
+
+
+/* Sets the maximum height size of the code blocks */
+/* (code block becomes scrollable, but not compatible when lines are displayed) */
+/* .md-typeset pre > code {
+  max-height: var(--md-codeblock-height, 800px);
+} */
+
+/* Failed workaround (lines are not scrollable)*/
+/* .highlighttable .linenodiv {
+  max-height: var(--md-codeblock-height, 800px);
+} */
+
 
 /* ================================================================================== */
-/* Product Description Page                                                           */
+/* Custom Admonitions                                                                 */
 /* ================================================================================== */
-/* Sets table width for product description page */
+
+/* SparkFun ========================================================================= */
+.md-typeset :is(.tip)>:is(.admonition-title,summary):before {
+  background-color: red;
+}
+
+
+/* GitHub =========================================================================== */
+.md-typeset .admonition.github,
+.md-typeset details.github {
+  border-color: white;
+}
+.md-typeset .github > .admonition-title,
+.md-typeset .github > summary {
+  background-image: linear-gradient(to bottom, #8241f9, #4e277b);
+  /* background-color: rgb(110, 64, 201); */
+}
+.md-typeset .github > .admonition-title::before,
+.md-typeset .github > summary::before {
+  background-color: white;
+  -webkit-mask-image: var(--md-admonition-icon--github);
+          mask-image: var(--md-admonition-icon--github);
+}
+
+
+/* Arduino ========================================================================== */
+.md-typeset .admonition.arduino,
+.md-typeset details.arduino {
+  border-color: #005c5f;
+}
+.md-typeset .arduino > .admonition-title,
+.md-typeset .arduino > summary {
+  background-color: rgba(0, 92, 95, 0.1);
+}
+.md-typeset .arduino > .admonition-title::before,
+.md-typeset .arduino > summary::before {
+  background-color: #005c5f;
+  -webkit-mask-image: var(--md-admonition-icon--arduino);
+          mask-image: var(--md-admonition-icon--arduino);
+}
+
+
+/* Python =========================================================================== */
+.md-typeset .admonition.python,
+.md-typeset details.python {
+  border-color: #3776ab;
+}
+.md-typeset .python > .admonition-title,
+.md-typeset .python > summary {
+  background-color: #1e415e;
+}
+.md-typeset .python > .admonition-title::before,
+.md-typeset .python > summary::before {
+  background-color: #3776ab;
+  -webkit-mask-image: var(--md-admonition-icon--python);
+          mask-image: var(--md-admonition-icon--python);
+}
+
+
+/* Code ============================================================================= */
+.md-typeset .admonition.code,
+.md-typeset details.code {
+  border-color: #9e9e9e;
+}
+.md-typeset .code > .admonition-title,
+.md-typeset .code > summary {
+  background-color: rgba(158, 158, 158, 0.1);
+}
+.md-typeset .code > .admonition-title::before,
+.md-typeset .code > summary::before {
+  background-color: #9e9e9e;
+  -webkit-mask-image: var(--md-admonition-icon--code);
+          mask-image: var(--md-admonition-icon--code);
+}
+
+
+/* Terminal ========================================================================= */
+.md-typeset .admonition.terminal,
+.md-typeset details.terminal {
+  border-color: #9e9e9e;
+}
+.md-typeset .terminal > .admonition-title,
+.md-typeset .terminal > summary {
+  background-color: rgba(158, 158, 158, 0.1);
+}
+.md-typeset .terminal > .admonition-title::before,
+.md-typeset .terminal > summary::before {
+  background-color: #9e9e9e;
+  -webkit-mask-image: var(--md-admonition-icon--terminal);
+          mask-image: var(--md-admonition-icon--terminal);
+}
+
+
+/* Serial Monitor =================================================================== */
+.md-typeset .admonition.serial,
+.md-typeset details.serial {
+  border-color: #9e9e9e;
+}
+.md-typeset .serial > .admonition-title,
+.md-typeset .serial > summary {
+  background-color: rgba(158, 158, 158, 0.1);
+}
+.md-typeset .serial > .admonition-title::before,
+.md-typeset .serial > summary::before {
+  background-color: #9e9e9e;
+  -webkit-mask-image: var(--md-admonition-icon--serial);
+          mask-image: var(--md-admonition-icon--serial);
+}
+
+
+
+
+/* ================================================================================== */
+/* Header Permalinks                                                                  */
+/* ================================================================================== */
+/* https://github.com/squidfunk/mkdocs-material/discussions/3535 */
+
+.headerlink {
+	--permalink-size: 16px; /* for font-relative sizes, 0.6em is a good choice */
+	--permalink-spacing: 4px;
+
+	width: calc(var(--permalink-size) + var(--permalink-spacing));
+	height: var(--permalink-size);
+	vertical-align: middle;
+	background-color: var(--md-default-fg-color--lighter);
+	background-size: var(--permalink-size);
+	mask-size: var(--permalink-size);
+	-webkit-mask-size: var(--permalink-size);
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	visibility: visible;
+  -webkit-mask-image: var(--md-admonition-icon--link);
+          mask-image: var(--md-admonition-icon--link);
+}
+
+[id]:target .headerlink {
+	background-color: var(--md-typeset-a-color);
+}
+
+.headerlink:hover {
+	background-color: var(--md-accent-fg-color) !important;
+}
+
+@media screen and (min-width: 76.25em) {
+	h1, h2, h3, h4, h5, h6 {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+	}
+
+  /* Sets icon location to left of header */
+	/* .headerlink {
+		order: -1;
+		margin-left: calc(var(--permalink-size) * -1 - var(--permalink-spacing)) !important;
+	} */
+}
+
+
+
+
+/* ================================================================================== */
+/* Introduction                                                                       */
+/* ================================================================================== */
+
+/* Sets table width for introduction */
 .md-typeset table.desc {
   width: 100%;
   display: table;
@@ -16,89 +202,15 @@
   font-size: .85rem;
 }
 
-/* Sets grid width for product description page */
+
+/* ================================================================================== */
+/* Grid Cards                                                                     */
+/* ================================================================================== */
+
+/* Sets grid width for introduction */
 .grid.cards.desc {
   grid-template-columns: 35% 65%;
 }
-
-/* Sets video size for product description page */
-.video {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-.video iframe {
-  position: absolute;
-  top: 0;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  border: 0;
-}
-
-.video0 {
-  position: relative;
-  width: 100%;
-}
-.video0 iframe {
-  position: relative;
-  top: 0;
-  width: 90vh;
-  height: 23.5vw;
-  min-width: 300px;
-  min-height: 169px;
-  border: 0;
-  overflow: hidden;
-}
-
-.video1 {
-  position: relative;
-  width: 30%;
-  min-width: 300px;
-  padding-bottom: 16.875%;
-  min-height: 169px;
-}
-.video1 iframe {
-  position: absolute;
-  top: 0;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  border: 0;
-}
-
-.video2 {
-  position: relative;
-  width: 100%;
-}
-.video2 iframe {
-  position: relative;
-  top: 0;
-  width: 90vh;
-  min-width: 200px;
-  /* height: 47vw * percentage */
-  height: 16.45vw;
-  min-height: 113px;
-  border: 0;
-  overflow: hidden;
-}
-
-
-/* Add compatibility for mobile devices */
-@media (max-width: 750px) {
-  .grid.cards.desc {
-    grid-template-columns: 100%;
-  }
-  .video2 iframe {
-    /* height: 47vw * percentage */
-    height: 47vw;
-  }
-}
-
-
-/* ================================================================================== */
-/* General Customizations                                                             */
-/* ================================================================================== */
 
 /* Sets images size in grid cards */
 .md-typeset .grid ul figure img {
@@ -106,36 +218,126 @@
   max-width: 200px;
 }
 
-/* Sets the maximum height size of the code blocks */
-.md-typeset pre > code {
-  max-height: var(--md-codeblock-height, 800px);
+/* Add compatibility to mobile platforms - by setting minimum width for grid cards */
+@media (max-width: 750px) {
+  .grid.cards.desc {
+    grid-template-columns: 100%;
+  }
+  .grid.cards.show {
+    grid-template-columns: 100%;
+  }
 }
 
-/* Hides elemments with <class="pdf"> on webpage (used for the generated PDF) */
-* + .pdf {
-  /* width: 100%;
-  display: table; */
-  display: none;
+
+/* ================================================================================== */
+/* YoutTube Videos                                                                    */
+/* ================================================================================== */
+
+/* Auto adjust embedded youtube videos size */
+/* height: 47vw * (viewport/element) percentage */
+.video {
+  position: relative;
+  width: 100%;
+}
+.video iframe {
+  position: relative;
+  top: 0;
+  width: 90vh;
+  min-width: 200px;
+  height: 16.45vw;
+  min-height: 113px;
+  border: 0;
+  overflow: hidden;
 }
 
-* figure.pdf {
-  /* width: 100%;
-  display: contents; */
-  display: none;
+.video_desc {
+  position: relative;
+  width: 100%;
+}
+.video_desc iframe {
+  position: relative;
+  top: 0;
+  width: 90vh;
+  min-width: 200px;
+  /* height: 12.72vw; */
+  height: calc(calc(calc(100vw - 48.4rem) * 0.35 - 2rem) * 0.9);
+  min-height: 113px;
+  border: 0;
+  overflow: hidden;
+}
+
+/* Add compatibility for mobile devices */
+/* height: 47vw * (viewport) percentage */
+
+/* Single Column */
+@media (max-width: 750px) {
+  .video iframe {
+    height: 47vw;
+  }
+
+  .video_desc iframe {
+    /* 100vw * 0.9 * 56.25% (aspect ratio) */
+    height: 50.625vw;
+  }
+}
+
+/* Grid: 35/65 */
+@media (min-width: 751px) {
+  .video_desc iframe {
+    /* 100vw * 0.9 * 56.25% (aspect ratio) * 0.35 */
+    height: 17.71875vw;
+  }
+}
+
+/* Single ToC */
+@media (min-width: 960px) {
+  .video_desc iframe {
+    /* height: 12.7vw; */
+    height: calc( ( (100vw - 24.2rem) * 0.35 - 2rem) * 0.9);
+  }
+}
+
+/* Double ToC */
+@media (min-width: 1219px) {
+  .video_desc iframe {
+    /* height: 12.7vw; */
+    height: calc( ( (100vw - 24.2rem * 2) * 0.35 - 2rem) * 0.9);
+  }
 }
 
 /* ================================================================================== */
 /* Parameters for PDF Rendering                                                       */
 /* ================================================================================== */
+
+/* Hides elemments with <class="pdf"> on webpage (used for the generated PDF) */
+* + .pdf {
+  display: none;
+}
+
+.md-typeset ul.pdf {
+  display: none;
+}
+
 @media print {
   /* Shows elements with <class="pdf"> on webpage (used for the generated PDF) */
   * + .pdf {
     display: contents;
   }
-  * figure.pdf {
-    display: block;
+
+  /* Removes borders on tables with <class="pdf"> */
+  table + .pdf {
+    border-style:none;
   }
 
+  /* Limits images size in table */
+  .pdf img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .md-typeset ul.pdf {
+    display: flow-root;
+  }
 
   /* Sets table to 100% of page width */
   .md-typeset table:not([class]) {
@@ -148,6 +350,7 @@
     display: table;
     table-layout: fixed;
   }
+  
   /* Sets images size in tables */
   .md-typeset table:not([class]) td img {
     width: 100%;
@@ -155,9 +358,18 @@
   }
 
   /* Hides grid cards on pdf */
-  /* .md-typeset .grid {
+  .md-typeset .grid {
 	  display: none;
-  } */
+  }
+
+
+  /* Display grid cards with board files */
+  .md-typeset .grid.grid.cards.show {
+	  display: block;
+  .md-typeset .grid.grid.cards.desc {
+	  display: none;
+  }
+
 
   /* Sets grid card width (not working)
   Works for File > Print function, but not valid for PDF generator due to issue with Weazy

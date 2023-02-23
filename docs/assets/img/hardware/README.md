@@ -1,6 +1,6 @@
-img/hookup_guide directory
+img/hardware directory
 ====================
-This folder should contain the images for the hookup guide pages
+This folder should contain the images for the hardware overview and assembly pages
 
 ## Hardware Overview
 * `dimensions.jpg` - Board Dimensions
@@ -19,8 +19,3 @@ This folder should contain the images for the hookup guide pages
 ## Hardware Assembly
 * `assembly_usb.jpg` - Image of board w/ USB cable connected
 * `assembly_headers.jpg` - Image of board w/ headers being soldered
-
-
-## Software Overview
-* `arduino_library.jpg` - Image of the Arduino library being selected in the Arduino IDE
-* `board_selection.jpg` - Image of the board definition being selected in the Arduino IDE

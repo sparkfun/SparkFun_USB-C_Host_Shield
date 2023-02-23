@@ -1,19 +1,37 @@
 ## Board Dimensions
 The board dimensions are illustrated in the drawing below; the listed measurements are in inches.
 
-<center>
-[![Board Dimensions](./img/hookup_guide/dimensions.png){ width="400" }](./img/hookup_guide/dimensions.png)<br>
-*[Board dimensions (PDF)](./board_files/dimensions.pdf) for the USB Host Shield, in inches. (Click to enlarge)*
-</center>
+
+<figure markdown>
+[![Board Dimensions](../assets/img/hardware/dimensions.png "Click to enlarge"){ width="400" }](../assets/img/hardware/dimensions.png)
+<figcaption markdown>Board dimensions ([PDF](../assets/board_files/dimensions.pdf)) for the USB Host Shield, in inches.</figcaption>
+</figure>
+
+??? tip "Need more measurements?"
+	For more information about the board's dimensions, users can download the [eagle files](../board_files/eagle_files.zip) for the board. These files can be opened in [Eagle](https://www.autodesk.in/products/eagle/free-download) and additional measurements can be made with the [dimensions tool](https://www.youtube.com/embed/dZLNd1FtNB8).
+
+	??? info "Download Eagle for Free!"
+		Users can [download Eagle](https://www.autodesk.in/products/eagle/free-download) for free from AutoDesk.
+		
+		The program is free to use for hobbyists and students. However, it does require an account registration to utilize the software.
+	
+	??? info "Dimensions Tool"
+		This video from Autodesk demonstrates how to utilize the dimensions tool in Eagle, to include additional measurements:
+
+		<center>
+		<div class="video">
+		<iframe src="https://www.youtube.com/embed/dZLNd1FtNB8" title="EAGLE Dimension Tool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</center>
 
 
 ## Power
 The MAX3421E USB controller only requires **3.3V** to operate; however, the shield *(and USB-C connector)* is powered entirely through either the `5V` or `VIN` pins of the connected Arduino board.
 
-<center>
-[![Power connections](./img/hookup_guide/power_connections.jpg){ width="200" }](./img/hookup_guide/power_connections.jpg)<br>
-*USB Host Shield power connections. (Click to enlarge)*
-</center>
+<figure markdown>
+[![Power connections](../assets/img/hardware/power_connections.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/power_connections.jpg)
+<figcaption markdown>USB Host Shield power connections.</figcaption>
+</figure>
 
 Below, is a general summary of the power circuitry on the board:
 
@@ -21,31 +39,32 @@ Below, is a general summary of the power circuitry on the board:
 	* To utilize this pin, users will need to connect an external power source to the barrel jack of the Arduino board they are using.
 * **`5V`** - Provides 5V and a regulated 3.3V for the shield
 * **`GND`** - The common ground or the 0V reference for the voltage supplies.
-* **`VBUS`** - The voltage to the USB-C connector (**5V**)
+* _**`VBUS`** - The voltage to the USB-C connector (**5V**)_
+	* In reference to the `VBUS` net of the [schematic](../assets/board_files/schematic.pdf).
 	* The available current is limited to what is supplied from the `VIN`/`5V` pin, up to the 750 mA threshold of the thermal fuse.
 
-	!!! note
+	!!! info
 		When a PD device is connected and the voltage output drops below **4.75V**, the PD device will restrict its current draw to avoid potentially damaging the DFP *(downward-facing port)*.
 
-*For more details, users can reference the [schematic](./board_files/schematic.pdf) and the [datasheets of the individual components](./component_documentation.md) in the power circuitry.*
+*For more details, users can reference the [schematic](../assets/board_files/schematic.pdf) and the [datasheets of the individual components](/SparkFun_USB-C_Host_Shield/resources/#hardware-component-documentation) in the power circuitry.*
 
 
 ### Power LED
 The red, power (`PWR`) LED will light up once **5V** is supplied to the shield. For most users, it will light up when power is supplied to the connected Arduino board.
 
-<center>
-[![Power LED](./img/hookup_guide/LED_pwr.jpg){ width="200" }](./img/hookup_guide/LED_pwr.jpg)<br>
-*USB Host Shield `PWR` status LED indicator. (Click to enlarge)*
-</center>
+<figure markdown>
+[![Power LED](../assets/img/hardware/LED_pwr.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/LED_pwr.jpg)
+<figcaption markdown>USB Host Shield `PWR` status LED indicator.</figcaption>
+</figure>
 
 
 ### Power Switches
 There are two switches on the USB Host Shield. One provides a selectable power input for the shield *(`VIN` or `5V`)* and the other provides power control *(on/off)* to the shield and USB connector.
 
-<center>
-[![Switches](./img/hookup_guide/switches.jpg){ width="200" }](./img/hookup_guide/switches.jpg)<br>
-*Power switches on the USB Host Shield. (Click to enlarge)*
-</center>
+<figure markdown>
+[![Switches](../assets/img/hardware/switches.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/switches.jpg)
+<figcaption markdown>Power switches on the USB Host Shield.</figcaption>
+</figure>
 
 * Power Select<br>
 	The power select switch allows users to easily choose the power supply for the shield. This switch mostly controls how the regulated 5V output for the USB-C connector is sourced. However, both options additionally supply the regulated 3.3V for the MAX3421E USB controller.
@@ -60,24 +79,27 @@ There are two switches on the USB Host Shield. One provides a selectable power i
 
 
 ### USB-C Connector
-??? note "Note: Charging PD Devices"
+??? info "Charging PD Devices"
 	When a PD device is connected and the voltage output drops below **4.75V**, the PD device will restrict its current draw to avoid potentially damaging the DFP *(downward-facing port)*.
 
 The USB-C port supports limited power output at **5V**. The available current is limited to what is supplied to the shield from either the `VIN` or `5V` pin, up to the **750 mA** threshold of the thermal fuse.
 
-<center>
-[![USB power](./img/hookup_guide/usb_power.jpg){ width="200" }](./img/hookup_guide/usb_connector.jpg)<br>
-*USB-C connector on the USB Host Shield. (Click to enlarge)*
-</center>
+<figure markdown>
+[![USB power](../assets/img/hardware/usb_connector.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/usb_connector.jpg)
+<figcaption markdown>USB-C connector on the USB Host Shield.</figcaption>
+</figure>
 
 
 
 ## USB Controller
-The [MAX3421E](./component_documentation/MAX3421E.pdf) from [Maxim Integrated *(now part of Analog Devices)*](https://www.maximintegrated.com/), is a USB peripheral/host controller that can be implemented as a full-speed USB peripheral or a full-/low-speed host compliant *(USB specification rev 2.0)*. This allows for a vast collection of USB peripherals to be interfaced with an embedded system. The MAX3421E also includes eight general-purpose inputs and outputs so users can reclaim the I/O pins used for the SPI interface and gain additional ones.
+The [MAX3421E](../assets/component_documentation/MAX3421E.pdf) from [Maxim Integrated *(now part of Analog Devices)*](https://www.maximintegrated.com/), is a USB peripheral/host controller that can be implemented as a full-speed USB peripheral or a full-/low-speed host compliant *(USB specification rev 2.0)*. This allows for a vast collection of USB peripherals to be interfaced with an embedded system. The MAX3421E also includes eight general-purpose inputs and outputs so users can reclaim the I/O pins used for the SPI interface and gain additional ones.
 
+<center>
 <table>
 	<tr>
 		<td>
+			<H3>Features</H3>
+			<hr>
 			<ul>
 				<li>Provides USB Host and Peripheral Functionality
 					<ul>
@@ -98,43 +120,67 @@ The [MAX3421E](./component_documentation/MAX3421E.pdf) from [Maxim Integrated *(
 			</ul>
 		</td>
 		<td align="center">
-			<a href="../img/hookup_guide/MAX3421E.jpg"><img alt="MAX3421E chip" src="../img/hookup_guide/MAX3421E.jpg"></a><br>
-			<i>MAX3421E chip on the USB-C Host Shield.<br>
-			(Click to enlarge)</i>
+			<a href="../../assets/img/hardware/MAX3421E.jpg"><img alt="MAX3421E chip" title="Click to enlarge" src="../../assets/img/hardware/MAX3421E.jpg" width="300"></a><br>
+			<i>MAX3421E chip on the USB-C Host Shield.</i>
 		</td>
 	<tr>
 </table>
+</center>
 
 
 ### I/O Pins
 The MAX3421E is controlled with seven pins on the USB-C Host Shield. Additionally, the MAX3421E provides eight general-purpose inputs and outputs for users to reclaim their I/O pins and gain additional ones.
 
-<!--- Comment out
-* SPI Pins:
-	* SCK: `D13`
-	* POCI: `D12`
-	* PICO: `D11`
-	* CS: `D10`
-* I/O Pins:
-	* INT: `D9`
-	* GPX: `D8`
-	* RST: `D7`
-* GPIO Pins:
-	* `GPIN0` - `GPIN7`
-	* `GPOUT0` - `GPOUT7`
---->
+<div class="grid cards" markdown>
+
+-	<figure markdown>
+	[![](../assets/img/hardware/io_shield.jpg "Click to enlarge"){ width="300" }](../assets/img/hardware/io_shield.jpg)
+	<figcaption markdown>I/O pins used by the USB Host Shield.</figcaption>
+	</figure>
+
+-	=== "SPI Pins"
+
+		* SCK: `D13`
+		* POCI: `D12`
+		* PICO: `D11`
+		* CS: `D10`
+
+	===	"I/O Pins"
+
+		* INT: `D9`
+		* GPX: `D8`
+		* RST: `D7`
+
+	=== "Power Pins"
+
+		* `VIN`
+		* `5V`
+		* `GND`
+
+		??? info
+			For more information about the power pins, please refer to the [power section](#power) *(above)*.
+
+</div>
+
+??? tip "New Feature"
+	New on this shield, we have added a silkscreen indicator to mark the I/O pins used by the shield. This should help users who are stacking other shields to avoid pin conflicts without referencing the documentation. 
+
+	<figure markdown>
+	[![](../assets/img/hardware/shield_pins_marked2.jpg "Click to enlarge"){ width="300" }](../assets/img/hardware/shield_pins_marked.jpg)
+	<figcaption markdown>I/O pins that are marked on the USB Host Shield.</figcaption>
+	</figure>
 
 
 #### SPI Pins
-!!! note
-	To comply with the latest <a href="https://www.oshwa.org/">OSHW</a> design practices, we have <a href="https://www.sparkfun.com/spi_signal_names">adopted the new SPI signal nomenclature</a> (<b>SDO</b>/<b>SDI</b> and <b>PICO</b>/<b>POCI</b>). The terms Master and Slave are now referred to as Controller and Peripheral. The <code>MOSI</code> signal on a controller has been replaced with <code>SDO</code> or <code>PICO</code>. Please refer to this <a href="https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names">announcement on the decision to deprecate the <b>MOSI</b>/<b>MISO</b> terminology and transition to the <b>SDO</b>/<b>SDI</b> naming convention</a>.</p>
+??? info "[OSHW](https://www.oshwa.org/) Compliance"
+	To comply with the latest [OSHW](https://www.oshwa.org/) design practices, we have [adopted the new SPI signal nomenclature](https://www.sparkfun.com/spi_signal_names) (**SDO**/**SDI** and **PICO**/**POCI**). The terms Master and Slave are now referred to as Controller and Peripheral. The `MOSI` signal on a controller has been replaced with `SDO` or `PICO`. Please refer to this [announcement on the decision to deprecate the **MOSI**/**MISO** terminology and transition to the **SDO**/**SDI** naming convention](https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names).
 
 The MAX3421E operates using a register set, accessed by an SPI interface at speeds up to 26MHz. Any SPI controller can add USB peripheral or host functionality using the simple 3- or 4- wire SPI interface The USB-timed operations are performed inside the MAX3421E with interrupts provided at completion, so any SPI controller does not need timers to meet USB timing requirements. Additionally, the firmware to operate the MAX3421E can also be simplified to only support a specific target device.
 
 <center>
 	<table>
 		<tr>
-			<td>
+			<td style="vertical-align:middle;">
 				<table>
 					<tr>
 						<th style="text-align:center">SCK</th>
@@ -155,15 +201,15 @@ The MAX3421E operates using a register set, accessed by an SPI interface at spee
 				</table>
 			</td>
 			<td align="center">
-				<a href=""><img alt="Annotated image of SPI pins" src="../img/hookup_guide/pins_spi.jpg" width="200"></a>
+				<a href="../../assets/img/hardware/pins_spi.jpg"><img alt="Annotated image of SPI pins" title="Click to enlarge" src="../../assets/img/hardware/pins_spi.jpg" width="300"></a>
 				<br>
-				<i>Default SPI bus connections on the USB Host Shield. (Click to enlarge)</i>
+				<i>Default SPI bus connections on the USB Host Shield.</i>
 			</td>
 		</tr>
 	</table>
 </center>
 
-!!! note
+??? tip
 	To learn more about the serial peripheral interface (SPI) protocol, check out this great <a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">tutorial</a>.
 	<p align="center">
 		<a href="https://learn.sparkfun.com/tutorials/16">Serial Peripheral Interface (SPI)<br>
@@ -176,43 +222,26 @@ In addition to the SPI pins, there are three I/O pins for the MAX3421E.
 <center>
 	<table>
 		<tr>
-			<th style="text-align:center">INT</th>
-			<td style="text-align:center"><code>D9</code> <code>(Output)</code></td>
-		</tr>
-		<tr>
-			<th style="text-align:center">GPX</th>
-			<td style="text-align:center"><code>D8</code> <code>(Output)</code></td>
-		</tr>
-		<tr>
-			<th style="text-align:center">RES</th>
-			<td style="text-align:center"><code>D7</code> <code>(Input)</code></td>
-		</tr>
-	</table>
-</center>
-
-<center>
-	<table>
-		<tr>
-			<td>
-				<table>
-					<tr>
-						<th style="text-align:center">INT</th>
-						<td style="text-align:center"><code>D9</code></td>
-					</tr>
-					<tr>
-						<th style="text-align:center">GPX</th>
-						<td style="text-align:center"><code>D8</code></td>
-					</tr>
-					<tr>
-						<th style="text-align:center">RES</th>
-						<td style="text-align:center"><code>D7</code></td>
-					</tr>
-				</table>
+			<td style="vertical-align:middle;">
+					<table>
+						<tr>
+							<th style="text-align:center">INT</th>
+							<td style="text-align:center"><code>D9</code> <code>(Output)</code></td>
+						</tr>
+						<tr>
+							<th style="text-align:center">GPX</th>
+							<td style="text-align:center"><code>D8</code> <code>(Output)</code></td>
+						</tr>
+						<tr>
+							<th style="text-align:center">RES</th>
+							<td style="text-align:center"><code>D7</code> <code>(Input)</code></td>
+						</tr>
+					</table>
 			</td>
 			<td align="center">
-				<a href=""><img alt="Annotated image of IO pins" src="../img/hookup_guide/pins_io.jpg" width="200"></a>
+				<a href="../../assets/img/hardware/pins_io.jpg"><img alt="Annotated image of IO pins" title="Click to enlarge" src="../../assets/img/hardware/pins_io.jpg" width="300"></a>
 				<br>
-				<i>I/O pins on the USB Host Shield. (Click to enlarge)</i>
+				<i>I/O pins on the USB Host Shield.</i>
 			</td>
 		</tr>
 	</table>
@@ -251,7 +280,8 @@ In addition to the SPI pins, there are three I/O pins for the MAX3421E.
 
 	Driving the `RES` pin low causes a chip reset on the MAX3421E. In a chip reset, all registers are reset to their default states, except for PINCTL (R17), USBCTL (R15), and SPI logic. To bring the MAX3421E out of chip reset, `RES` must be driven high.
 
-	**Note:** The MAX3421E is internally reset if either V<sub>CC</sub> or V<sub>L</sub> is not present. The register file is not accessible under these conditions.
+	!!! note
+		The MAX3421E is internally reset if either V<sub>CC</sub> or V<sub>L</sub> is not present. The register file is not accessible under these conditions.
 
 
 #### MAX3421E I/O Pins
@@ -261,46 +291,50 @@ The MAX3421E also includes eight general-purpose inputs (8) and outputs (8), tha
 * `GPIN#` - General-Purpose Inputs.
 	* `GPIN7`–`GPIN0` are connected to V<sub>L</sub> with internal pullup resistors.
 
-<center>
-[![Annotated image of GPIO pins](./img/hookup_guide/pins_gpio.jpg){ width="200" }](./img/hookup_guide/pins_gpio.jpg)<br>
-*GPIO pins on the USB Host Shield. (Click to enlarge)*
-</center>
+<figure markdown>
+[![Annotated image of GPIO pins](../assets/img/hardware/pins_gpio.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/pins_gpio.jpg)
+<figcaption markdown>GPIO pins on the USB Host Shield.</figcaption>
+</figure>
 
 ### USB-C Connector
-??? note "Note: Charging PD Devices"
+??? info "Charging PD Devices"
 	When a PD device is connected and the voltage output drops below **4.75V**, the PD device will restrict its current draw to avoid potentially damaging the DFP *(downward-facing port)*.
 
 The USB-C connector is used to provide provided an interface to the MAX3421 USB controller, which can function as either a USB peripheral or host. It also supports limited power output at **5V**. The available current is limited to what is supplied to the shield from either the `VIN` or `5V` pin, up to the **750 mA** threshold of the thermal fuse.
 
-<center>
-[![USB-C Connector](./img/hookup_guide/usb_connector.jpg){ width="200" }](./img/hookup_guide/usb_connector.jpg)<br>
-*USB-C connector on the USB Host Shield. (Click to enlarge)*
-</center>
+<figure markdown>
+[![USB-C Connector](../assets/img/hardware/usb_connector.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/usb_connector.jpg)
+<figcaption markdown>USB-C connector on the USB Host Shield.</figcaption>
+</figure>
 
 
 ## Reset Button
-Usually, Arduino shields cover the <kbd>Reset</kbd> button of a user's Arduino board; therefore, a <kbd>Reset</kbd> button is provided on the USB-C Host shield. This allows users to easily reset their Arduino board without having to squeeze in between the Arduino board and shield to hit the button.
+Sometimes, an Arduino shield covers the ++"Reset"++ button of a user's Arduino board; therefore, a ++"Reset"++ button is provided on the USB-C Host shield. This allows users to easily reset their Arduino board without having to squeeze in between the Arduino board and shield to hit the button.
 
-<center>
-[![Reset Button](./img/hookup_guide/button_reset.jpg){ width="200" }](./img/hookup_guide/button_reset.jpg)<br>
-*<kbd>RST</kbd> button on the USB Host Shield. (Click to enlarge)*
-</center>
-
-
-## Jumpers
-There are two jumpers on the back of the board that can be used to easily modify the hardware connections on the board.
-
-* **SHLD** - This jumper can be used to disconnect the USB shield from `GND`.
-* **PWR** - This jumper can be used to remove power to the `PWR` LED. 
+<figure markdown>
+[![Reset Button](../assets/img/hardware/button_reset.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/button_reset.jpg)
+<figcaption markdown>++"Reset"++ button and `RST` pin on the USB Host Shield.</figcaption>
+</figure>
 
 !!! note
-	<p>Never modified a jumper before? Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces tutorial</a> for a quick introduction!</p>
+	The reset button (`RST` pin) is different from the `RES` (reset) pin for the MAX3421E.
+	
+	* The button, `RST` pin on the shield, resets the microcontroller of the attached development board.
+	* The `RES` pin, connected to pin `7` on the shield, is a chip reset for the MAX3421E.
+
+
+## Jumper
+There is a **SHLD** jumper on the top of the board that can be used to easily disconnect the shroud of the USB-C connector from `GND`.
+
+??? tip
+	Never modified a jumper before? Check out our [Jumper Pads and PCB Traces tutorial](https://learn.sparkfun.com/tutorials/664) for a quick introduction!
+
 	<p align="center">
 		<a href="https://learn.sparkfun.com/tutorials/664">How to Work with Jumper Pads and PCB Traces<br>
 		<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg"></a>
 	</p>
 
-<center>
-[![Jumpers](./img/hookup_guide/jumpers.jpg){ width="200" }](./img/hookup_guide/jumpers.jpg)<br>
-*The jumpers on the back of the USB Host Shield. (Click to enlarge)*
-</center>
+<figure markdown>
+[![Jumpers](../assets/img/hardware/jumper.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/jumper.jpg)
+<figcaption markdown>The `SHLD` jumper on the top of the USB Host Shield.</figcaption>
+</figure>
