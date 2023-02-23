@@ -3,7 +3,7 @@
 * [Schematic](../assets/board_files/schematic.pdf) (PDF)
 * [Eagle Files](../assets/board_files/eagle_files.zip) (ZIP)
 * [Board Dimensions](../assets/board_files/dimensions.pdf) (PDF)
-* [SFE Product Showcase Video](https://youtu.be/g2MgO2fjqsw)
+* Arduino Library: [USB Host Rev. 2.0](https://github.com/felis/USB_Host_Shield_2.0)
 * [GitHub Hardware Repo](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield)
 
 ### Additional Resources
