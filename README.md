@@ -17,7 +17,7 @@ SparkFun USB-C Host Shield
 
 *[SparkFun USB-C Host Shield (DEV-21247)](https://www.sparkfun.com/products/21247)*
 
-This new version updates the USB Type-A connector to a USB-C connector and provides users with the option to power the shield from the `5V` or	`VIN` pins. The USB-C female connector also supplies 5V as any normal USB *(downward facing)* port would.
+This new version of the [USB Host Shield](https://github.com/sparkfun/USB_Host_Shield) updates the USB Type-A connector to a USB-C connector and provides users with the option to power the shield from the `5V` or `VIN` pins. The USB-C female connector also supplies 5V as any normal USB *(downward facing)* port would.
 
 The SparkFun USB Host Shield contains all of the digital logic and analog circuitry necessary to implement a USB peripheral/host controller with your Arduino. This means you could use your Arduino to interface with and control any USB 2.0 compatible device - thumbdrives, digital cameras, Bluetooth dongles, and much more!
 
