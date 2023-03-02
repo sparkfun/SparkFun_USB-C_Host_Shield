@@ -50,10 +50,10 @@ Documentation
 --------------
 * **[Hookup Guide (mkdocs)](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/)** - Hookup guide for the USB-C Host Shield hosted by GitHub pages.
 
-	*Need to download or print our hookup guide?*
+*Need to download or print our hookup guide?*
 
-	* [Print *(Print to PDF)* from Single-Page View](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/hookup_guide/single_page)
-	* [Download PDF](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/assets/board_files/hookup_guide.pdf) *(Beta - Mostly works, but some attributes may be broken.)*
+* [Print *(Print to PDF)* from Single-Page View](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/hookup_guide/single_page)
+* [Download PDF](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/assets/board_files/hookup_guide.pdf) *(Beta - Mostly works, but some attributes may be broken.)*
 
 Product Variants
 ----------------
