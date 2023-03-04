@@ -268,6 +268,7 @@ The following products are used in the Arduino examples shown in this hookup gui
 	<figure markdown>
 	![USB 2.0 Type-C Cable - 1 Meter](https://cdn.sparkfun.com/assets/parts/1/5/8/3/4/16905-USB_-_C_to_C_cable-01.jpg)
 	</figure>
+	<figcaption>(Coming Soon)</figcaption>
 	</a>
 
 -   <a href="https://www.sparkfun.com/products/21870">**USB A (Female) to Type C (Male) Converter**<br>
