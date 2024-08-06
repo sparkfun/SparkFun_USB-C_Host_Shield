@@ -216,7 +216,7 @@ extra:
 
 # Configures styling for PDF rendering and webpage layout
 extra_css:
-  - overrides/extra.css
+  - stylesheet/extra.css
 
 
 # Configures Page/Tab Navigation
