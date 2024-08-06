@@ -1,29 +1,34 @@
 # Did we make a mistake?
 
-Spot something wrong? Please let us know. <a href="https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/issues" alt="Issues"><img src="https://img.shields.io/github/issues/sparkfun/SparkFun_USB-C_Host_Shield.svg" /></a>
+Spot something wrong? Please let us know. [![Open Issues Badge](https://img.shields.io/github/issues/sparkfun/SparkFun_USB-C_Host_Shield.svg)](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/issues "Issues")
 
-!!! attention
-	This is not where customers should seek assistance on a product. If you require technical assistance or have questions about a product that is not working as expected, please head over to the [SparkFun Technical Assistance](https://www.sparkfun.com/technical_assistance) page for some initial troubleshooting.
-    <center>
-    [SparkFun Technical Assistance Page](https://www.sparkfun.com/technical_assistance){ .md-button .md-button--primary }
-    </center>
-    
-    If you can't find what you need there, the [SparkFun Forums](https://forum.sparkfun.com/index.php) is a great place to search product forums and ask questions.
-    
-    !!! info "Account Registration Required"
-        If this is your first visit to our forum, you'll need to create a [Forum Account](https://forum.sparkfun.com/ucp.php?mode=register) to search product forums and post questions.
+<!-- Technical Assistance Box -->
+!!! warning "Need Help?"
+	If you need technical assistance or more information on a product that is not working as you expected, we recommend heading on over to the [SparkFun Technical Assistance](https://www.sparkfun.com/technical_assistanc) page for some initial troubleshooting. This **Submit Issues** page is not where users should seek assistance.
+
+	<center>
+	[SparkFun Technical Assistance Page](https://www.sparkfun.com/technical_assistance){ .md-button .md-button--primary }
+	</center>
+
+	If you can't find what you need there, the [SparkFun Forums](https://forum.sparkfun.com/index.php) is a great place to search the product forums and ask questions.
+
+	!!! info "Account Registration Required"
+		For your first visit to our forum, you'll need to create a [Forum Account](https://forum.sparkfun.com/ucp.php?mode=register) to post questions.
+
 
 ## Discrepancies in the Documentation
 
-All of this documentation can be modified by you! Please help us make it better.
+All of our documentation can be modified by you! Please help us make it better.
 
-* The documentation files for these pages are contained in the [`docs` folder](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/tree/main/docs) of the [SparkFun USB-C Host Shield](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield) repository.
+* The documentation files for these pages are contained in the [`docs` folder](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/tree/main/docs) of the [SparkFun RA6M5 Thing Plus repository](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield).
 
-### Spot something wrong?
+### 🔍 Spot something wrong?
+
 If a section of the documentation is incorrect, please [open an issue](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/issues) and let us know.
 
 ### Do you have a suggested correction?
-1. With a GitHub account, fork this repo
+
+1. With a GitHub account, [fork this repository](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/fork).
 2. Add your correction(s) or improvement(s) to the markdown file(s)
 3. File a pull request with your changes, and enjoy making the ~~words~~ ~~worlds~~ world a better place.
 	* Once received, the documentation specialist will automatically be notified.
@@ -33,18 +38,30 @@ If a section of the documentation is incorrect, please [open an issue](https://g
 
 All of our designs are open-source! Please help us make it better.
 
-* Our board design files are contained in the [`Hardware` folder](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/tree/main/Hardware) of the [SparkFun USB-C Host Shield](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield) repository. 
+* Our board design files are contained in the [`Hardware` folder](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/tree/main/Hardware) of the [SparkFun RA6M5 Thing Plus repository](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield).
 
-### Does something not make sense?
+### Does something not make sense? 🤔
+
 If part of the design is confusing, please [open an issue](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/issues) and let us know.
 
-### Did we forget to include an important function of the board?
-* Please keep in mind that we may intentionally exclude certain functions of the board to meet our product design requirements. *(For example, our Qwiic Micro boards are intended to fit on a small board layout and only use I<sup>2</sup>C communication; therefore, we may not have the SPI and interrupt pins available for users.)*
-* If part of the board's functionality is missing, please [open an issue](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/issues) and file a feature request.
+### Did we forget to include an important function of the board? 🤦
+
+If part of the board's functionality is missing, please [open an issue](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/issues) and file a feature request.
+
+!!! tip "Design Considerations"
+	Please keep in mind that we may intentionally exclude certain functions of the board to meet our product design requirements.
+
+	* *For example, our Qwiic Micro boards are intended to fit on a small board layout and only use I^2^C communication; therefore, we may not have the SPI and interrupt pins available for users.*
+
 
 ### Do you wish to contribute directly to improving the board design?
-1. With a GitHub account, Fork this repo
-2. Add your design improvement(s)
+
+1. With a GitHub account, [fork this repository](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/fork).
+2. Add your design augmentation(s)
 3. File a pull request with your changes, and enjoy making the ~~words~~ ~~worlds~~ world a better place.
-	* Once received, the engineer in charge of the original design will automatically be notified.
-	* We will review your suggested improvement(s), if they are within our board design standards and meet our product design requirements, we will flag these changes for our next board revision. *(Please note, that even if your suggestion is accepted, these changes may not be immediate. We may have to cycle through our current product inventory first.)*
+	1. Once received, the engineer in charge of the original design will automatically be notified.
+	2. We will review your suggested improvement(s) to verify that they are within our board design standards and meet our product design requirements.
+	3. If approved, we will flag these changes for our next board revision. Congrats! 🍻
+
+		!!! info
+			Even if your suggestion is accepted, these changes may not be immediately available for purchase. We may have to cycle through our current product inventory first.
