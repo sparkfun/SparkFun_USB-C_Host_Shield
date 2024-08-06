@@ -25,7 +25,7 @@
 	A four-wire serial interface is used to communicate with the host controller chip, so the shield connects the Arduino's hardware SPI pins (D10-13) to the MAX3421E. While the logic-level for the shield is 3.3V, all the SPI signals are sent through a hex converter to keep the shield compatible with any 5V Arduino boards.
 
 	<center>
-	[Purchase from SparkFun :fontawesome-solid-cart-plus:](https://www.sparkfun.com/products/21247){ .md-button .md-button--primary }
+	[&nbsp;![QR code to product page](./assets/img/qr_code/product-low.png){ .tinyqr }&nbsp;&nbsp;Purchase from SparkFun :fontawesome-solid-cart-plus:{ .heart }&nbsp;&nbsp;&nbsp;](https://www.sparkfun.com/products/21247){ .md-button .md-button--primary }
 	</center>
 
 </div>
