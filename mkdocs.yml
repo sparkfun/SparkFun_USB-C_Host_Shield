@@ -22,8 +22,8 @@ theme:
   # Header Logo
   logo: assets/img/sfe_logo_sm.png
 
-  # Icon in Browser Tab (must be square img - i.e. 32x32 pixels)
-  favicon: assets/img/sfe_logo_sq.png
+  # Icon in Browser Tab (must be a square image - i.e. 32x32 pixels)
+  favicon: assets/img/sfe-logo.png
 
   # Page Font
   font:
