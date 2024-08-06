@@ -7,7 +7,7 @@ In this example, we will be utilizing the [USBHIDBootKbdAndMouse](https://github
 { .annotate }
 
 1. <figure markdown>
-    [![](../assets/img/software/example-kbd_mouse.png "Click to enlarge")](../assets/img/software/example-kbd_mouse.png)
+    [![](./assets/img/software/example-kbd_mouse.png "Click to enlarge")](./assets/img/software/example-kbd_mouse.png)
     <figcaption markdown>Select the `USBHIDBootKbdAndMouse` example sketch from the `File` drop-down menu.</figcaption>
     </figure>
 

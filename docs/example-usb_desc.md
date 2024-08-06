@@ -7,7 +7,7 @@ For our first example, we will be utilizing the [USB_dec](https://github.com/fel
 { .annotate }
 
 1. <figure markdown>
-    [![](../assets/img/software/example-usb_desc.png "Click to enlarge")](../assets/img/software/example-usb_desc.png)
+    [![](./assets/img/software/example-usb_desc.png "Click to enlarge")](./assets/img/software/example-usb_desc.png)
     <figcaption markdown>Select the `USB_Desc` example sketch from the `File` drop-down menu.</figcaption>
     </figure>
 
@@ -27,7 +27,7 @@ For our first example, we will be utilizing the [USB_dec](https://github.com/fel
 Users will need to connect a peripheral USB device to the USB-C connector, before running the example. After the example begins, users should see an output in the [Serial Monitor](https://learn.sparkfun.com/tutorials/112) with a description of the connected USB device.
 
 <figure markdown>
-[![](../assets/img/hardware/assembly-usb_device.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/assembly-usb_device.jpg)
+[![](./assets/img/hardware/assembly-usb_device.jpg "Click to enlarge"){ width="400" }](./assets/img/hardware/assembly-usb_device.jpg)
 <figcaption markdown>The USB Host Shield with a [USB-C adapter](https://www.sparkfun.com/products/21870) and [flash drive](https://www.sparkfun.com/products/14658) attached.</figcaption>
 </figure>
 
@@ -44,33 +44,6 @@ Users will need to connect a peripheral USB device to the USB-C connector, befor
         --8<-- "https://raw.githubusercontent.com/felis/USB_Host_Shield_2.0/master/examples/USB_desc/USB_desc.ino:11:19"
         ```
 
-    <table class="pdf" style="border-style:none">
-        <tr>
-            <td>
-                <a href="https://www.sparkfun.com/products/18014">
-                    <center><img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/7/2/2/9/18014-Qwiic_USB_Hub-02.jpg" alt="Qwiic USB Hub - USB2514B"></center>
-                    <h3 class="title">Qwiic USB Hub - USB2514B</h3>
-                </a>
-                SPX-18014
-            </td>
-            <td>
-                <a href="https://www.sparkfun.com/products/21271">
-                    <center><img src="https://cdn.sparkfun.com/r/140-140/assets/parts/2/1/0/4/9/21271-_CAB-_01.jpg" alt="SparkFun 4-in-1 Multi-USB Cable - USB-C Host">
-                    </center>
-                    <h3 class="title">SparkFun 4-in-1 Multi-USB Cable - USB-C Host</h3>
-                </a>
-                CAB-21271
-            </td>
-            <td>
-                <a href="https://www.sparkfun.com/products/21272">
-                    <center><img src="https://cdn.sparkfun.com/r/140-140/assets/parts/2/1/0/5/0/21272-_CAB-_01.jpg" alt="SparkFun 4-in-1 Multi-USB Cable - USB-A Host">
-                    </center>
-                    <h3 class="title">SparkFun 4-in-1 Multi-USB Cable - USB-A Host</h3>
-                </a>
-                CAB-21272
-            </td>
-        </tr>
-    </table>
 
     <div class="grid cards" markdown>
 

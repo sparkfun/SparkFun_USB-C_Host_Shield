@@ -219,16 +219,16 @@ extra_css:
 nav:
   - Getting Started:
     - Introduction: index.md
-    - Hardware Overview: hookup_guide/hardware_overview.md
-    - Hardware Assembly: hookup_guide/hardware_assembly.md
+    - Hardware Overview: hardware_overview.md
+    - Hardware Assembly: hardware_assembly.md
     - Software - Arduino IDE:
-      - Installation & Setup: hookup_guide/software_overview.md
+      - Installation & Setup: software_overview.md
       - Examples:
-        - Device Description: arduino_ide/usb_desc.md
-        - Keyboard & Mouse: arduino_ide/usb_hid.md
-        - Game Controller: arduino_ide/usb_hid_controller.md
-  - Resources: hookup_guide/resources.md
+        - Device Description: example-usb_desc.md
+        - Keyboard & Mouse: example-usb_hid.md
+        - Game Controller: example-usb_hid_controller.md
+  - Resources: resources.md
   - Support:
-    - Troubleshooting Tips: hookup_guide/troubleshooting_tips.md
     - Sumbit Issues: github/file_issue.md
+    - Troubleshooting Tips: troubleshooting_tips.md
     - Become a Contributor!: github/contribute.md

@@ -69,7 +69,7 @@ In this example, we will be utilizing the [XBOXUSB](https://github.com/felis/USB
 { .annotate }
 
 1. <figure markdown>
-    [![](../assets/img/software/example-xbox.png "Click to enlarge")](../assets/img/software/example-xbox.png)
+    [![](./assets/img/software/example-xbox.png "Click to enlarge")](./assets/img/software/example-xbox.png)
     <figcaption markdown>Select the `XBOXUSB` example sketch from the `File` drop-down menu.</figcaption>
     </figure>
 
@@ -81,7 +81,7 @@ In this example, we will be utilizing the [XBOXUSB](https://github.com/felis/USB
 Users will need to turn on and connect the controller to the USB-C host shield with a USB cable, before running the example.
 
 <figure markdown>
-[![](../assets/img/software/usb_controller.jpg "Click to enlarge"){ width="400" }](../assets/img/software/usb_controller.jpg)
+[![](./assets/img/software/usb_controller.jpg "Click to enlarge"){ width="400" }](./assets/img/software/usb_controller.jpg)
 <figcaption markdown>8BitDo controller connected to the USB-C Host Shield with a USB-C cable.</figcaption>
 </figure>
 
@@ -96,7 +96,7 @@ In this example, we will be utilizing the [XBOXONESBT](https://github.com/felis/
 { .annotate }
 
 1. <figure markdown>
-    [![](../assets/img/software/example-xbox.png "Click to enlarge")](../assets/img/software/example-xbox.png)
+    [![](./assets/img/software/example-xbox.png "Click to enlarge")](./assets/img/software/example-xbox.png)
     <figcaption markdown>Select the `XBOXONESBT` example sketch from the `File` drop-down menu.</figcaption>
     </figure>
 
@@ -108,7 +108,7 @@ In this example, we will be utilizing the [XBOXONESBT](https://github.com/felis/
 Users will need to connect the Bluetooth USB module to the USB-C host shield with the USB adapter before running the example. After the example begins, users should see an output in the [Serial Monitor](https://learn.sparkfun.com/tutorials/112) with print out based on the user's interaction with their controller.
 
 <figure markdown>
-[![](../assets/img/software/bt_controller.jpg "Click to enlarge"){ width="400" }](../assets/img/software/bt_controller.jpg)
+[![](./assets/img/software/bt_controller.jpg "Click to enlarge"){ width="400" }](./assets/img/software/bt_controller.jpg)
 <figcaption markdown>Bluetooth module connected to the USB-C Host Shield; and paired with an 8BitDo controller.</figcaption>
 </figure>
 

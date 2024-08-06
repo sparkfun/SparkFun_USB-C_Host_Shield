@@ -3,25 +3,31 @@ The board dimensions are illustrated in the drawing below; the listed measuremen
 
 
 <figure markdown>
-[![Board Dimensions](../assets/img/hardware/dimensions.png "Click to enlarge"){ width="400" }](../assets/img/hardware/dimensions.png)
-<figcaption markdown>Board dimensions ([PDF](../assets/board_files/dimensions.pdf)) for the USB Host Shield, in inches.</figcaption>
+[![Board Dimensions](./assets/img/hardware/dimensions.png "Click to enlarge"){ width="400" }](./assets/img/hardware/dimensions.png)
+<figcaption markdown>Board dimensions ([PDF](./assets/board_files/dimensions.pdf)) for the USB Host Shield, in inches.</figcaption>
 </figure>
 
 ??? tip "Need more measurements?"
-	For more information about the board's dimensions, users can download the [eagle files](../board_files/eagle_files.zip) for the board. These files can be opened in [Eagle](https://www.autodesk.in/products/eagle/free-download) and additional measurements can be made with the [dimensions tool](https://www.youtube.com/embed/dZLNd1FtNB8).
+	For more information about the board's dimensions, users can download the [**Eagle files**](./assets/board_files/eagle_files.zip) for the board. These files can be opened in Eagle and additional measurements can be made with the dimensions tool.
 
-	??? info "Download Eagle for Free!"
-		Users can [download Eagle](https://www.autodesk.in/products/eagle/free-download) for free from AutoDesk.
-		
-		The program is free to use for hobbyists and students. However, it does require an account registration to utilize the software.
-	
-	??? info "Dimensions Tool"
+	??? info ":octicons-download-16:{ .heart } Eagle - Free Download!"
+		Eagle is a [CAD]("computer-aided design") program for electronics that is free to use for hobbyists and students. However, it does require an account registration to utilize the software.
+
+		<center>
+		[Download from<br>:autodesk-primary:{ .autodesk }](https://www.autodesk.com/products/eagle/free-download "Go to downloads page"){ .md-button .md-button--primary width="200px" }
+		</center>
+
+	??? info ":straight_ruler: Dimensions Tool"
 		This video from Autodesk demonstrates how to utilize the dimensions tool in Eagle, to include additional measurements:
 
 		<center>
+
 		<div class="video">
 		<iframe src="https://www.youtube.com/embed/dZLNd1FtNB8" title="EAGLE Dimension Tool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		![QR code to instructional video](./assets/img/qr_code/dimension_tool.png){ .qr width=100 }
 		</div>
+
 		</center>
 
 
@@ -29,7 +35,7 @@ The board dimensions are illustrated in the drawing below; the listed measuremen
 The MAX3421E USB controller only requires **3.3V** to operate; however, the shield *(and USB-C connector)* is powered entirely through either the `5V` or `VIN` pins of the connected Arduino board.
 
 <figure markdown>
-[![Power connections](../assets/img/hardware/power_connections.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/power_connections.jpg)
+[![Power connections](./assets/img/hardware/power_connections.jpg "Click to enlarge"){ width="400" }](./assets/img/hardware/power_connections.jpg)
 <figcaption markdown>USB Host Shield power connections.</figcaption>
 </figure>
 
@@ -40,20 +46,20 @@ Below, is a general summary of the power circuitry on the board:
 * **`5V`** - Provides 5V and a regulated 3.3V for the shield
 * **`GND`** - The common ground or the 0V reference for the voltage supplies.
 * _**`VBUS`** - The voltage to the USB-C connector (**5V**)_
-	* In reference to the `VBUS` net of the [schematic](../assets/board_files/schematic.pdf).
+	* In reference to the `VBUS` net of the [schematic](./assets/board_files/schematic.pdf).
 	* The available current is limited to what is supplied from the `VIN`/`5V` pin, up to the 750 mA threshold of the thermal fuse.
 
 	!!! info
 		When a PD device is connected and the voltage output drops below **4.75V**, the PD device will restrict its current draw to avoid potentially damaging the DFP *(downward-facing port)*.
 
-*For more details, users can reference the [schematic](../assets/board_files/schematic.pdf) and the [datasheets of the individual components](/SparkFun_USB-C_Host_Shield/resources/#hardware-component-documentation) in the power circuitry.*
+*For more details, users can reference the [schematic](./assets/board_files/schematic.pdf) and the [datasheets of the individual components](../resources/#hardware-component-documentation) in the power circuitry.*
 
 
 ### Power LED
 The red, power (`PWR`) LED will light up once **5V** is supplied to the shield. For most users, it will light up when power is supplied to the connected Arduino board.
 
 <figure markdown>
-[![Power LED](../assets/img/hardware/LED_pwr.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/LED_pwr.jpg)
+[![Power LED](./assets/img/hardware/LED_pwr.jpg "Click to enlarge"){ width="400" }](./assets/img/hardware/LED_pwr.jpg)
 <figcaption markdown>USB Host Shield `PWR` status LED indicator.</figcaption>
 </figure>
 
@@ -62,7 +68,7 @@ The red, power (`PWR`) LED will light up once **5V** is supplied to the shield. 
 There are two switches on the USB Host Shield. One provides a selectable power input for the shield *(`VIN` or `5V`)* and the other provides power control *(on/off)* to the shield and USB connector.
 
 <figure markdown>
-[![Switches](../assets/img/hardware/switches.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/switches.jpg)
+[![Switches](./assets/img/hardware/switches.jpg "Click to enlarge"){ width="400" }](./assets/img/hardware/switches.jpg)
 <figcaption markdown>Power switches on the USB Host Shield.</figcaption>
 </figure>
 
@@ -85,14 +91,14 @@ There are two switches on the USB Host Shield. One provides a selectable power i
 The USB-C port supports limited power output at **5V**. The available current is limited to what is supplied to the shield from either the `VIN` or `5V` pin, up to the **750 mA** threshold of the thermal fuse.
 
 <figure markdown>
-[![USB power](../assets/img/hardware/usb_connector.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/usb_connector.jpg)
+[![USB power](./assets/img/hardware/usb_connector.jpg "Click to enlarge"){ width="400" }](./assets/img/hardware/usb_connector.jpg)
 <figcaption markdown>USB-C connector on the USB Host Shield.</figcaption>
 </figure>
 
 
 
 ## USB Controller
-The [MAX3421E](../assets/component_documentation/MAX3421E.pdf) from [Maxim Integrated *(now part of Analog Devices)*](https://www.maximintegrated.com/), is a USB peripheral/host controller that can be implemented as a full-speed USB peripheral or a full-/low-speed host compliant *(USB specification rev 2.0)*. This allows for a vast collection of USB peripherals to be interfaced with an embedded system. The MAX3421E also includes eight general-purpose inputs and outputs so users can reclaim the I/O pins used for the SPI interface and gain additional ones.
+The [MAX3421E](./assets/component_documentation/MAX3421E.pdf) from [Maxim Integrated *(now part of Analog Devices)*](https://www.maximintegrated.com/), is a USB peripheral/host controller that can be implemented as a full-speed USB peripheral or a full-/low-speed host compliant *(USB specification rev 2.0)*. This allows for a vast collection of USB peripherals to be interfaced with an embedded system. The MAX3421E also includes eight general-purpose inputs and outputs so users can reclaim the I/O pins used for the SPI interface and gain additional ones.
 
 <center>
 <table>
@@ -120,7 +126,7 @@ The [MAX3421E](../assets/component_documentation/MAX3421E.pdf) from [Maxim Integ
 			</ul>
 		</td>
 		<td align="center">
-			<a href="../../assets/img/hardware/MAX3421E.jpg"><img alt="MAX3421E chip" title="Click to enlarge" src="../../assets/img/hardware/MAX3421E.jpg" width="300"></a><br>
+			<a href=".././assets/img/hardware/MAX3421E.jpg"><img alt="MAX3421E chip" title="Click to enlarge" src=".././assets/img/hardware/MAX3421E.jpg" width="300"></a><br>
 			<i>MAX3421E chip on the USB-C Host Shield.</i>
 		</td>
 	<tr>
@@ -134,7 +140,7 @@ The MAX3421E is controlled with seven pins on the USB-C Host Shield. Additionall
 <div class="grid cards" markdown>
 
 -	<figure markdown>
-	[![](../assets/img/hardware/io_shield.jpg "Click to enlarge"){ width="300" }](../assets/img/hardware/io_shield.jpg)
+	[![](./assets/img/hardware/io_shield.jpg "Click to enlarge"){ width="300" }](./assets/img/hardware/io_shield.jpg)
 	<figcaption markdown>I/O pins used by the USB Host Shield.</figcaption>
 	</figure>
 
@@ -166,7 +172,7 @@ The MAX3421E is controlled with seven pins on the USB-C Host Shield. Additionall
 	New on this shield, we have added a silkscreen indicator to mark the I/O pins used by the shield. This should help users who are stacking other shields to avoid pin conflicts without referencing the documentation. 
 
 	<figure markdown>
-	[![](../assets/img/hardware/shield_pins_marked2.jpg "Click to enlarge"){ width="300" }](../assets/img/hardware/shield_pins_marked.jpg)
+	[![](./assets/img/hardware/shield_pins_marked2.jpg "Click to enlarge"){ width="300" }](./assets/img/hardware/shield_pins_marked.jpg)
 	<figcaption markdown>I/O pins that are marked on the USB Host Shield.</figcaption>
 	</figure>
 
@@ -201,7 +207,7 @@ The MAX3421E operates using a register set, accessed by an SPI interface at spee
 				</table>
 			</td>
 			<td align="center">
-				<a href="../../assets/img/hardware/pins_spi.jpg"><img alt="Annotated image of SPI pins" title="Click to enlarge" src="../../assets/img/hardware/pins_spi.jpg" width="300"></a>
+				<a href=".././assets/img/hardware/pins_spi.jpg"><img alt="Annotated image of SPI pins" title="Click to enlarge" src=".././assets/img/hardware/pins_spi.jpg" width="300"></a>
 				<br>
 				<i>Default SPI bus connections on the USB Host Shield.</i>
 			</td>
@@ -239,7 +245,7 @@ In addition to the SPI pins, there are three I/O pins for the MAX3421E.
 					</table>
 			</td>
 			<td align="center">
-				<a href="../../assets/img/hardware/pins_io.jpg"><img alt="Annotated image of IO pins" title="Click to enlarge" src="../../assets/img/hardware/pins_io.jpg" width="300"></a>
+				<a href=".././assets/img/hardware/pins_io.jpg"><img alt="Annotated image of IO pins" title="Click to enlarge" src=".././assets/img/hardware/pins_io.jpg" width="300"></a>
 				<br>
 				<i>I/O pins on the USB Host Shield.</i>
 			</td>
@@ -292,7 +298,7 @@ The MAX3421E also includes eight general-purpose inputs (8) and outputs (8), tha
 	* `GPIN7`–`GPIN0` are connected to V<sub>L</sub> with internal pullup resistors.
 
 <figure markdown>
-[![Annotated image of GPIO pins](../assets/img/hardware/pins_gpio.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/pins_gpio.jpg)
+[![Annotated image of GPIO pins](./assets/img/hardware/pins_gpio.jpg "Click to enlarge"){ width="400" }](./assets/img/hardware/pins_gpio.jpg)
 <figcaption markdown>GPIO pins on the USB Host Shield.</figcaption>
 </figure>
 
@@ -303,7 +309,7 @@ The MAX3421E also includes eight general-purpose inputs (8) and outputs (8), tha
 The USB-C connector is used to provide provided an interface to the MAX3421 USB controller, which can function as either a USB peripheral or host. It also supports limited power output at **5V**. The available current is limited to what is supplied to the shield from either the `VIN` or `5V` pin, up to the **750 mA** threshold of the thermal fuse.
 
 <figure markdown>
-[![USB-C Connector](../assets/img/hardware/usb_connector.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/usb_connector.jpg)
+[![USB-C Connector](./assets/img/hardware/usb_connector.jpg "Click to enlarge"){ width="400" }](./assets/img/hardware/usb_connector.jpg)
 <figcaption markdown>USB-C connector on the USB Host Shield.</figcaption>
 </figure>
 
@@ -312,7 +318,7 @@ The USB-C connector is used to provide provided an interface to the MAX3421 USB 
 Sometimes, an Arduino shield covers the ++"Reset"++ button of a user's Arduino board; therefore, a ++"Reset"++ button is provided on the USB-C Host shield. This allows users to easily reset their Arduino board without having to squeeze in between the Arduino board and shield to hit the button.
 
 <figure markdown>
-[![Reset Button](../assets/img/hardware/button_reset.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/button_reset.jpg)
+[![Reset Button](./assets/img/hardware/button_reset.jpg "Click to enlarge"){ width="400" }](./assets/img/hardware/button_reset.jpg)
 <figcaption markdown>++"Reset"++ button and `RST` pin on the USB Host Shield.</figcaption>
 </figure>
 
@@ -326,15 +332,23 @@ Sometimes, an Arduino shield covers the ++"Reset"++ button of a user's Arduino b
 ## Jumper
 There is a **SHLD** jumper on the top of the board that can be used to easily disconnect the shroud of the USB-C connector from `GND`.
 
-??? tip
-	Never modified a jumper before? Check out our [Jumper Pads and PCB Traces tutorial](https://learn.sparkfun.com/tutorials/664) for a quick introduction!
+??? tip "New to jumper pads?"
+	Check out our [Jumper Pads and PCB Traces Tutorial](https://learn.sparkfun.com/tutorials/664) for a quick introduction!
 
-	<p align="center">
-		<a href="https://learn.sparkfun.com/tutorials/664">How to Work with Jumper Pads and PCB Traces<br>
-		<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg"></a>
-	</p>
+	<div class="grid cards col-4" markdown align="center">
+
+	-   <a href="https://learn.sparkfun.com/tutorials/664">
+		<figure markdown>
+		![Tutorial thumbnail](https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg)
+		</figure>
+
+		---
+		
+		**How to Work with Jumper Pads and PCB Traces**</a>
+
+	</div>
 
 <figure markdown>
-[![Jumpers](../assets/img/hardware/jumper.jpg "Click to enlarge"){ width="400" }](../assets/img/hardware/jumper.jpg)
+[![Jumpers](./assets/img/hardware/jumper.jpg "Click to enlarge"){ width="400" }](./assets/img/hardware/jumper.jpg)
 <figcaption markdown>The `SHLD` jumper on the top of the USB Host Shield.</figcaption>
 </figure>

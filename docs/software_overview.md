@@ -5,36 +5,6 @@
 Most users may already be familiar with the Arduino IDE and its use. However, for those of you who have never heard the name *Arduino* before, feel free to check out the [Arduino website](https://www.arduino.cc/en/Guide/HomePage). To get started with using the Arduino IDE, check out our tutorials below:
 
 
-<table class="pdf" style="border-style:none" align="center">
-	<tr>
-		<td align="center">
-			<a class="thumb" href="https://learn.sparkfun.com/tutorials/50">
-				<img src="https://cdn.sparkfun.com/c/264-148/assets/3/b/6/e/b/512e66bece395f492b000000.jpg" alt="What is an Arduino?">
-				<h3 class="title">What is an Arduino?</h3>
-			</a>
-		</td>
-		<td align="center">
-			<a class="thumb" href="https://learn.sparkfun.com/tutorials/61">
-				<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/1/arduinoThumb.jpg" alt="Installing Arduino IDE">
-				<h3 class="title">Installing Arduino IDE</h3>
-			</a>
-		</td>
-		<td align="center">
-			<a class="thumb" href="https://learn.sparkfun.com/tutorials/15">
-				<img src="https://cdn.sparkfun.com/c/264-148/assets/b/e/4/b/2/50f04b99ce395fd95e000001.jpg" alt="Installing an Arduino Library">
-				<h3 class="title">Installing an Arduino Library</h3>
-			</a>
-		</td>
-		<td align="center">
-			<a class="thumb" href="https://learn.sparkfun.com/tutorials/1265">
-				<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/2/6/5/sparkfun_boards.PNG" alt="Installing Board Definitions in the Arduino IDE">
-				<h3 class="title">Installing Board Definitions in the Arduino IDE</h3>
-			</a>
-		</td>
-	</tr>
-</table>
-
-
 <div class="grid cards" markdown align="center">
 
 -   <a href="https://learn.sparkfun.com/tutorials/50">**What is an Arduino?**
@@ -96,7 +66,7 @@ Most users may already be familiar with the Arduino IDE and its use. However, fo
 	When selecting a board to program in the Arduino IDE, users should select the **Arduino Uno** from the **Tools** drop-down menu _(_i.e. **Tools** > **Board** > **Arduino AVR Boards** > **Arduino Uno**)_.
 
 	<figure markdown>
-	[![](../assets/img/software/board_selection.png "Click to enlarge"){ width="400" }](../assets/img/software/board_selection.png)
+	[![](./assets/img/software/board_selection.png "Click to enlarge"){ width="400" }](./assets/img/software/board_selection.png)
 	<figcaption markdown>Select the **Arduino Uno** from the Tools drop-down menu in the Arduino IDE.</figcaption>
 	</figure>
 
@@ -104,7 +74,7 @@ Most users may already be familiar with the Arduino IDE and its use. However, fo
 		In the newest version of the Arduino IDE 2.`x`.`x`, users can also select their board (*green*) and port (*blue*) from the `Select Board & Port` dropdown menu (*yellow*).
 
 		<figure markdown>
-		[![](../assets/img/software/board_selection2.png "Click to enlarge"){ width="400" }](../assets/img/software/board_selection2.png)
+		[![](./assets/img/software/board_selection2.png "Click to enlarge"){ width="400" }](./assets/img/software/board_selection2.png)
 		<figcaption markdown>Selecting the **Arduino Uno** and **COM5** port from the **Select Board & Port** drop-down menu in the Arduino IDE (v2.0.3).</figcaption>
 		</figure>
 
@@ -113,7 +83,7 @@ Most users may already be familiar with the Arduino IDE and its use. However, fo
 The [USB Host Library Rev. 2.0](https://github.com/felis/USB_Host_Shield_2.0) can be installed from the library manager in the Arduino IDE.
 
 <figure markdown>
-[![](../assets/img/software/arduino_library.png "Click to enlarge"){ width="400" }](../assets/img/software/arduino_library.png)
+[![](./assets/img/software/arduino_library.png "Click to enlarge"){ width="400" }](./assets/img/software/arduino_library.png)
 <figcaption markdown>USB Host Library in the library manager of the Arduino IDE.</figcaption>
 </figure>
 
@@ -124,7 +94,7 @@ The [USB Host Library Rev. 2.0](https://github.com/felis/USB_Host_Shield_2.0) ca
 	In the Arduino IDE v1.x.x, the library manager will have the following appearance for the USB Host Shield library:
 
 	<figure markdown>
-	[![](../assets/img/software/arduino_library-legacy.png "Click to enlarge"){ width="400" }](../assets/img/software/arduino_library-legacy.png)
+	[![](./assets/img/software/arduino_library-legacy.png "Click to enlarge"){ width="400" }](./assets/img/software/arduino_library-legacy.png)
 	<figcaption markdown>USB Host Library in the library manager of the Arduino IDE (v1.x.x).</figcaption>
 	</figure>
 
