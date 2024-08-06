@@ -28,7 +28,7 @@ Repository Contents
 -------------------
 
 * **[/docs](/docs/)** - Online documentation files
-	* [overrides](/docs/overrides/) - Customization files for the GitHub pages product documentation
+	* [overrides](/docs/overrides/) - Customization files for the GitHub page's product documentation
 	* [assets](/docs/assets/) - Folder containing all the file assets used for the product documentation
 		* [board_files](/docs/assets/board_files/) - Files for the product design
 			* [Eagle design files](/docs/assets/board_files/eagle_files.zip) (.zip)
@@ -36,12 +36,6 @@ Repository Contents
 			* [Dimensions](/docs/assets/board_files/dimensions.pdf) (.pdf)
 		* [component_documentation](/docs/assets/component_documentation/) - Datasheets and manuals for hardware components
 		* [img](/docs/assets/img/) - Images for the product documentation
-			* [hardware](/docs/assets/img/hardware/) - Images for the hardware related pages (i.e. hardware overview and assembly)
-			* [software](/docs/assets/img/examples) - Images for the software related pages (i.e. software overview and examples)
-	* [index.md](/docs/index.md) - Product description page
-	* [hookup_guide](/docs/hookup_guide/) - Folder containing the files for the `Hookup Guide` pages
-	* [arduino_ide](/docs/arduino_ide) - Folder containing the files for the software setup/installation and example pages
-	* [resources.md](/docs/resources.md) - File listing the product resources
 	* [github](/docs/github/) - Files with instructions for filing GitHub issues/pull-requests
 * **[/Firmware](/Firmware/)** - Example sketches demonstrating extra peripherals
 * **[/Hardware](/Hardware/)** - Eagle design files (.brd, .sch)
@@ -49,11 +43,11 @@ Repository Contents
 Documentation
 --------------
 * **[Hookup Guide (mkdocs)](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/)** - Hookup guide for the USB-C Host Shield hosted by GitHub pages.
+  [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/) [![GitHub Pages Deploy](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/actions/workflows/mkdocs.yml/badge.svg)](https://github.com/sparkfun/SparkFun_USB-C_Host_Shield/actions/workflows/mkdocs.yml)
 
 *Need to download or print our hookup guide?*
 
-* [Print *(Print to PDF)* from Single-Page View](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/hookup_guide/single_page)
-* [Download PDF](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/assets/board_files/hookup_guide.pdf) *(Beta - Mostly works, but some attributes may be broken.)*
+* [Print *(Print to PDF)* from Single-Page View](http://docs.sparkfun.com/SparkFun_USB-C_Host_Shield/print_view)
 
 Product Variants
 ----------------
@@ -73,7 +67,7 @@ License Information
 
 This product is _**open source**_! 
 
-Please review the LICENSE.md file for license information. 
+Please review the LICENSE.md file for license information.
 
 If you have any questions or concerns about licensing, please contact technical support on our [SparkFun forums](https://forum.sparkfun.com/viewforum.php?f=152).
 
