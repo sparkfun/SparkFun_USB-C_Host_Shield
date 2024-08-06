@@ -18,9 +18,7 @@ edit_uri: blob/main/docs/
 theme:
   # Theme: https://squidfunk.github.io/mkdocs-material/
   name: material
-
-  # Header Logo
-  logo: assets/img/sfe_logo_sm.png
+  custom_dir: overrides # Personalized changes to the theme
 
   # Icon in Browser Tab (must be a square image - i.e. 32x32 pixels)
   favicon: assets/img/sfe-logo.png
@@ -97,6 +95,9 @@ theme:
 
   # Configures icons of callout boxes
   icon:
+    # Sets homepage icon
+    logo: sfe-logo
+
     # Sets repo icon to GitHub icon
     repo: fontawesome/brands/github
     
@@ -127,9 +128,6 @@ theme:
       serial: fontawesome/solid/display
       # Permalink icon
       link: octicons/link-16
-
-  # Adds PDF icon to download hookup guide
-  custom_dir: docs/overrides
 
 
 # Included MkDocs plugins
@@ -198,7 +196,7 @@ markdown_extensions:
 # Configures social icons in the footer
 extra:
   social:
-    - icon: sfe_logo # simple/sparkfun
+    - icon: sfe-logo # simple/sparkfun
       link: https://www.sparkfun.com/products/21247
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/sparkfun
